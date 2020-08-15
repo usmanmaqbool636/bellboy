@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0
+}
+
+.mySlides {
+    display: none;
+    position: relative;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.mySlides .img-fluid {
+    width: 100vw !important;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    position: relative;
+    /* height: 42.8vw; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-top: 3.1vw; */
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.fade1 {
+    animation-name: fade1;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}

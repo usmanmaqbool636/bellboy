@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url("./media.css");
+@import url("./slide.css");
+
+/* Globals */
+
+html,
+body {
+    overflow-x: hidden;
+    box-sizing: border-box !important;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100vw !important;
+    width: 100% !important;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-button {
+    background-color: #f7b615;
+    border-color: #f7b619;
+}
+
+.nav-button:active,
+.nav-button:focus,
+.nav-button:hover {
+    opacity: .8;
+    background-color: #f7b615;
+    border-color: #f7b619;
+}
+
+.hd2 {}
+
+.hd5 {}
+
+.para {
+    font-size: 1.2rem;
+}
+
+.text-yellow {
+    color: #f7b615 !important;
+}
+
+.bg-yellow {
+    background-color: #f7b615;
+}
+
+.offset::before {
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+}
+
+
+/* End Globals */
+
+
+/* Navbar Start */
+
+header {
+    height: 76.vw;
+    /* background-image: url('../img/header/header-bg.png'); */
+    background-image: url("../img/header/header-ng.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.show {}
+
+.navbar {
+    /* height: 80px; */
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 2px dotted #acd68d;
+    color: #ffffff;
+}
+
+.navbar-brand img {}
+
+.fa-phone {
+    color: white;
+}
+
+.navbar-nav .nav-item {
+    transition: transform .5s linear, opacity .5s linear;
+    margin: 0 20px;
+}
+
+.nav-item .nav-link {
+    color: #ffffff !important;
+}
+
+.header-content-container {
+    padding: 0 5vw;
+    background-image: url("../img/Bike.svg");
+    background-repeat: no-repeat;
+    background-position: 90% center;
+}
+
+.header-content {
+    width: 56%;
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 7vw;
+    margin-top: -16vw;
+}
+
+.header-content p {
+    width: 90%;
+    font-size: 2.5vw;
+}
+
+.header-content button {
+    background-color: #ffffff;
+    padding: .7rem 3rem;
+    margin-top: 3vw;
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+
+/* NavBar End */
+
+
+/* Services start */
+
+
+/* actual services */
+
+.services-section {}
+
+.services-row {
+    padding: 0;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.services-row img {}
+
+.services-row h3 {
+    width: 60%;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2efe7;
+    max-width: 310px;
+    height: 142px;
+    border-radius: 10px;
+}
+
+.service-item img {
+    height: 100px;
+}
+
+.service-item:first-child {
+    margin-left: 0;
+}
+
+.service-item:last-child {
+    margin-right: 0;
+}
+
+.service-item h4 {
+    margin: 0;
+    margin-left: .5rem;
+    vertical-align: middle;
+    font-weight: normal;
+}
+
+
+/* Services end */
+
+
+/* StayHome */
+
+.stayhome {
+    background-color: #282932;
+}
+
+.stayhome .col-md-7,
+.stayhome .col-md-5 {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.stayhome div:first-child {
+    border: none;
+}
+
+.stayhome-content {
+    padding: 2rem;
+}
+
+.stayhome-content h2 {
+    color: #ffffff;
+    font-size: 3vw;
+}
+
+.stayhome-content h1 {
+    color: #f7b615;
+    font-size: 4vw;
+}
+
+.stayhome-content p {
+    color: #ffffff;
+    font-size: 1.4vw;
+}
+
+.stayhome-content h5 {
+    font-size: 1.5vw;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.stayhome-content .btn {
+    background-color: #f7b615;
+    color: #ffffff;
+    padding: .7rem 2rem;
+    font-size: 2vw;
+}
+
+.stayhome .img-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+.stayhome .img-group h5 {
+    color: #ffffff;
+}
+
+
+/* StayHome End */
+
+
+/* testimonials start */
+
+.fa-quote-left {
+    color: #f7b615;
+}
+
+.testimonials-container {
+    margin: 5rem 0;
+}
+
+.testimonial-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 auto;
+}
+
+
+/* testimonials end */
+
+
+/* App section Start */
+
+.app-section {
+    background-image: url("../img/app-section/app-bg.webp");
+    height: 730px;
+    padding: 2rem 2rem 0;
+}
+
+.app-section .text-content {
+    width: 90%;
+    padding: 3rem;
+}
+
+.app-section .text-content h1 {
+    font-size: 2.9vw;
+}
+
+.app-section .text-content p,
+.app-section .text-content ol {
+    font-size: 1.7vw;
+}
+
+.app-section .text-content ol {
+    list-style: none;
+    text-align: left;
+    margin-left: 2vw;
+}
+
+.app-section .text-content ol li {
+    counter-increment: li-counter;
+    position: relative;
+}
+
+.app-section .text-content ol li::before {
+    content: "";
+    font-size: 1.5vw;
+    font-weight: bold;
+    position: absolute;
+    --size: 1.8vw;
+    left: -4vw;
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: .4vw;
+    background: f7b615;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 1px 1px 0 #f7b615;
+}
+
+.app-section img {
+    width: 80%;
+}
+
+.apps {
+    display: flex;
+    position: relative;
+}
+
+.apps>div {
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    letter-spacing: .5vw;
+}
+
+
+/* App section End */
+
+
+/* news letter  start */
+
+.newsletter {
+    background-color: #f7b615;
+}
+
+.mail-content {
+    display: flex;
+    line-height: 1rem;
+}
+
+.mail-content .mail-content-text {
+    align-self: center;
+    padding-left: 2rem;
+}
+
+.mail-content .mail-content-text h2 {
+    line-height: 12px;
+}
+
+.newsletter>div:first-child {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.newsletter .row {
+    height: 210px;
+    padding: 0 0 0 1rem;
+}
+
+.newsletter-form {}
+
+
+/* news letter end */
+
+
+/* Footer Start */
+
+footer {
+    background-image: url('../img/footer/footer-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-number-bg {
+    background-image: url("../img/footer/customer-service.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 177px;
+    margin-top: 2rem;
+}
+
+.contact-number {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 63%;
+}
+
+.contact-number>div {
+    width: 44%;
+}
+
+.contact-number>div h5 {
+    font-size: 1.5vw;
+}
+
+.contact-number>div h2 {
+    font-size: 2.5vw;
+}
+
+.footer-icons {
+    margin-top: 2rem;
+}
+
+.footer-icons a:hover,
+.footer-icons a {
+    text-decoration: none;
+}
+
+.footer-icons i {
+    color: #f7b615;
+    margin: 0 1.5rem;
+    transition: all .4s ease;
+}
+
+.footer-icons i:hover {
+    color: #76bb43;
+    transform: translateY(-10px);
+}
+
+.content-logo-text p {
+    font-size: 1.2rem;
+}
+
+footer hr {
+    border-color: #8d8e92;
+    border-style: dotted;
+}
+
+.newsletter-form {
+    display: inline-flex;
+    position: relative;
+}
+
+.btn-dark {
+    background-color: #000000 !important;
+}
+
+
+/* Footer End */

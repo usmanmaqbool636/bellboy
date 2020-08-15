@@ -1,0 +1,356 @@
+/* // Small devices (landscape phones, 576px and up) */
+
+@media (max-width: 575.98px) {
+    .para {
+        font-size: .66rem !important;
+    }
+
+    .stayhome-content h2 {
+        font-size: 5vw !important;
+    }
+
+    .stayhome-content p {
+        font-size: 4vw !important;
+    }
+
+    .stayhome-content h5 {
+        font-size: 2vw !important;
+    }
+
+    .navbar-brand img {
+        width      : 22vw;
+        margin-left: -4vw;
+    }
+
+    .navbar {
+        padding-left : 0;
+        padding-right: 2vw;
+    }
+
+    .header-content-container {
+        height         : 60vw;
+        background-size: 50%;
+    }
+
+    .header-content {
+        margin: auto 0;
+    }
+
+    .services-row {
+        padding: 3vw;
+    }
+
+    .service-item {
+        margin: 2vw 0 !important;
+    }
+
+    .app-section {
+        height : auto !important;
+        padding: 2rem 0;
+    }
+
+    .apps>div {
+        position: absolute;
+        top     : 14% !important;
+        left    : 3% !important;
+    }
+
+    .app-section .text-content {
+        width     : 90%;
+        margin    : 0 auto;
+        padding   : unset !important;
+        text-align: center;
+    }
+
+    .app-section .text-content p,
+    .app-section .text-content ol {
+        font-size: 2.3vw !important;
+    }
+
+    .app-section .text-content h1 {
+        font-size: 4vw !important;
+    }
+
+    .app-section .img-container {
+        margin: 0 auto;
+    }
+
+    .mail-content .mail-content-text h5 {
+        font-size: 3vw;
+    }
+
+    .mail-content .mail-content-text h2 {
+        font-size: 4.5vw !important;
+    }
+
+    .contact-number {
+        height: 50% !important;
+    }
+
+    .contact-number h5 {
+        font-size: 2.5vw !important;
+    }
+
+    .contact-number h2 {
+        font-size  : 4vw !important;
+        line-height: 0.5;
+    }
+
+    .content-logo-text {
+        margin-top: -3rem;
+    }
+
+    .footer-icons i {
+        font-size: 1.5em !important;
+    }
+    .blog{
+        flex-direction: column !important;
+    }
+    .blog .img-contaier{
+        height: auto !important;
+        width: 100% !important;
+        margin:0 0 1rem 0;
+    }
+    .iconList{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400.98px) {
+    .navbar-brand img {
+        width      : 18vw !important;
+        margin-left: -7vw !important;
+        margin-top : -3vw;
+    }
+
+    .header-content p {
+        font-size: 3vw !important;
+    }
+
+    .apps>div {
+        left     : 0% !important;
+        font-size: 8vw;
+    }
+
+    .apps img {
+        width: 50% !important;
+    }
+
+    .contact-number {
+        height: 37% !important;
+    }
+
+    .content-logo-text {
+        padding: 0;
+    }
+
+    .footer-icons i {
+        font-size: 1em !important;
+    }
+    
+}
+
+@media (min-width: 576px) {
+    .para {
+        font-size: 1rem !important;
+    }
+
+    .stayhome-content p {
+        font-size: 1.8vw !important;
+    }
+
+    .navbar-brand img {
+        margin-left: -2vw;
+    }
+
+    /* .header-content-container {
+        background-position: 75% 10% !important;
+        height             : 69vw !important;
+        background-size    : 25%;
+    } */
+
+    .header-content-container {
+        height         : 69vw;
+        background-size: 40%;
+        
+    }
+
+    .header-content {
+        margin: auto 0;
+    }
+
+    .service-item {
+        margin: 2vw !important;
+    }
+
+    .app-section {
+        height : auto !important;
+        padding: 2rem 0;
+    }
+
+    .app-section .text-content {
+        width     : 90%;
+        margin    : 0 auto;
+        padding   : unset !important;
+        text-align: center;
+    }
+
+    .app-section .text-content p,
+    .app-section .text-content ol {
+        font-size: 2.3vw !important;
+    }
+
+    .app-section .text-content h1 {
+        font-size: 4vw !important;
+    }
+
+    .mail-content .mail-content-text h2 {
+        line-height: 1.5rem !important;
+    }
+
+    .contact-number>div {
+        width: 41%;
+    }
+
+    .contact-number {
+        height: 51% !important;
+    }
+
+    .contact-number h5 {
+        font-size: 2.2vw !important;
+    }
+
+    .contact-number h2 {
+        font-size  : 3.5vw !important;
+        line-height: 0.5;
+    }
+
+    .content-logo-text {
+        margin-top: -1rem;
+    }
+  
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .navbar-brand img {
+        width      : 160px;
+        margin-left: 0;
+    }
+
+    .header-content-container {
+        background-position: 75% 10% !important;
+        height             : 50vw !important;
+        background-size    : 25%;
+    }
+
+    .service-item {
+        margin            : .8vw !important;
+        -webkit-box-sizing: unset;
+        box-sizing        : unset;
+    }
+
+    .app-section .text-content {
+        text-align: left;
+    }
+
+    .app-section .text-content h1 {
+        font-size: 4.7vw !important;
+    }
+
+    .apps>div {
+        position: absolute;
+        top     : 15% !important;
+        left    : 3% !important;
+    }
+
+    .app-section .text-content p,
+    .app-section .text-content ol {
+        font-size: 1.7vw !important;
+    }
+
+    .contact-number {
+        height: 67% !important;
+    }
+
+    .newsletter>div:first-child {
+        width: 72% !important;
+    }
+    
+}
+
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .service-item {
+        max-width: 200px !important;
+    }
+
+    .contact-number {
+        height: 87% !important;
+    }
+
+    .content-logo-text {
+        margin-top: 2rem;
+    }
+
+    .newsletter>div:first-child {
+        width: 85% !important;
+    }
+
+    .newsletter-form .btn {
+        right: -1rem !important;
+    }
+
+    .apps>div {
+        position: absolute;
+        top     : 20% !important;
+        left    : 3% !important;
+    }
+
+    .newsletter-form {
+        float: right;
+    }
+   
+}
+
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .service-item {
+        max-width: 230px !important;
+    }
+
+    .contact-number {
+        height: 101% !important;
+    }
+
+    .content-logo-text {
+        margin-top: 3rem;
+    }
+
+    .newsletter-form .btn {}
+}
+
+@media (min-width: 1400px) {
+    .service-item {
+        max-width: 270px !important;
+    }
+
+    .contact-number {
+        height: 100% !important;
+    }
+
+    .contact-number h5 {
+        font-size: 1.9vw !important;
+    }
+
+    .contact-number h2 {
+        font-size  : 3.2vw !important;
+        line-height: 0.5;
+    }
+}
