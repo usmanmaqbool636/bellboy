@@ -21,15 +21,18 @@ header {
 }
 .header-content-container-blog {
     padding: 0 5vw;
-    background-image: url("../img/standicon.png");
+    background-image: url("../img/Running.svg");
     background-repeat: no-repeat;
-    background-position: 85% 15%;
+    background-position: 100% 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
     max-height: 650px;
 }
-
+.nav-active{
+    font-weight: bold;
+    border-bottom:2px solid #f7b615;
+}
 .header-content-blog {
     width: 56%;
     color: white;
@@ -48,7 +51,10 @@ header {
 
 
 
-
+.img-fluid1{
+    width: 100%;
+    height: 100%;
+}
 .blog{
     display: flex;
     flex-direction: row;
@@ -103,4 +109,30 @@ header {
 .blog-aside ul>li::before{
     content: ">";
     margin-right: 1rem;
+}
+
+
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.category-item {
+    background-color: black;
+    color           : white;
+    font-size       : 1.4rem !important;
+    border-radius   : 8px;
+    padding         : 5px;
 }

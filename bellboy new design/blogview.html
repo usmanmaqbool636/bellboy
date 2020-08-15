@@ -29,7 +29,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
-    <header class="container-fluid  p-0">
+    <header class="container-fluid  p-0" style="background-size: cover;">
         <!-- NavBar -->
         <nav class="navbar navbar-expand-lg  bg-transparent navbar-light bg-light">
             <a class="navbar-brand" href="/"><img src="./img/header/logo.svg" width="160" alt="Logo"></a>
@@ -60,21 +60,6 @@
             </div>
         </nav>
         <!-- navBar -->
-
-        <div class="container-fluid slideshow-container">
-            <div class="header1">
-                <div class="row header-content-container-blog">
-                    <div class=" header-content-blog">
-                        <h1 class="fade1">Home Delivery</h1>
-                        <button class="btn mb-2 rounded-pill btn-lg lg bg-yellow text-white" type="button">
-                            Hire Now
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
 
 
 
@@ -123,33 +108,9 @@
 
     <main class="container-fluid p-0 m-0">
 
-        <section class="container">
+        <section class="container my-5">
+            <div id="blog-id">
 
-            <div class="row py-5">
-
-
-                <div id="blogList" class="col-xl-8 pt-5 order-1 order-lg-0">
-
-
-                </div>
-
-                <div class="col-xl-4 pt-5 order-lg-1 order-0">
-
-                    <div class="blog-aside search">
-                        <h3>Search</h3>
-                        <div class="form-group has-search">
-                            <span class="fa fa-search form-control-feedback text-yellow"></span>
-                            <input type="text" class="form-control" placeholder="Search">
-                        </div>
-                        <!-- <input type="text" placeholder="Search here" /> -->
-                    </div>
-                    <div class="blog-aside categories">
-                        <h3>Categories</h3>
-                        <ul id="categories">
-                        </ul>
-                    </div>
-
-                </div>
             </div>
         </section>
 
@@ -240,94 +201,75 @@
 
     <!-- Optional JavaScript -->
     <script>
+        var urlParams = new URLSearchParams(location.search);
+        const blogId = urlParams.get('id')
         const root = "https://bellboyadmin.herokuapp.com"
-        // const root = "http://localhost:5000"
+        // const root = "http://localhost:5000";
+        const renderCategories = (blog) => {
 
-        const blogList = document.getElementById("blogList");
-        const CategoriesList = document.getElementById("categories");
-        const fetchBlogs = async () => {
+            blog.category.forEach(cat => {
+                document.getElementById(blog._id).innerHTML += `<li class="category-item d-inline-block mx-1">${cat.name}</li>`
+            })
+
+        }
+
+        var renderBlog = async () => {
             try {
-                blogList.innerHTML = ` <div class="d-flex justify-content-center">
+                document.getElementById("blog-id").innerHTML = `
+                            <div class="d-flex justify-content-center">
                                 <div class="spinner-border" style="width: 5rem; height: 5rem;" role="status">
                                     <span class="sr-only">Loading...</span>
                                 </div>
-                            </div>`
-                const blogs = await axios.get(`${root}/api/blogs`);
-                if (!blogs.data.length) {
-                    blogList.innerHTML = `<h1>No Blogs found </h1>`
+                            </div>
+                `
+                const blog = await axios.get(`${root}/api/blogs/${blogId}`);
+                const blogdata = blog.data;
+                if (blogdata.title) {
+                    const date = moment(blogdata.createdAt).format("DD-MMM-YY");
+
+                    document.getElementById("blog-id").innerHTML = `
+            <div>
+                <div class="d-flex justify-content-center mb-5">
+                    <img class="img-fluid" src="${root}/api/blogs/photo/${blogdata._id}" />
+                    </div>
+                    <div>
+                        <h1 class="heading mb-3">${blogdata.title} </h1>
+                        <h2 class="date">${date}</h2>
+                        <p class="tag my-3">TAGs</p>
+                        <ul id=${blogdata._id} class="list-unstyled">
+                        
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <p>
+                            ${blogdata.body}
+                        </p>
+                    </div>
+                </div>
+            `
+            renderCategories(blogdata);
                 }
                 else {
-                    blogList.innerHTML = ``
-                    blogs.data.forEach(blog => {
-
-                        //     blogList.innerHTML += `
-                        // <div class="blog my-3">
-                        //         <div class="img-contaier">
-                        //             <img src="${root}/api/blogs/photo/${blog._id}" class="img-fluid" alt="blog image" />
-                        //         </div>
-                        //         <div>
-                        //             <h3>${blog.title}</h3>
-
-                        //             <div class="mb-2 iconList">
-
-                        //                 <div>
-                        //                     <i class="fa fa-calendar text-yellow" aria-hidden="true"></i> &nbsp;
-                        //                     ${moment(blog.createdAt).format("MMM Do[,] YYYY")}
-                        //                 </div>
-                        //             </div>
-                        //             <p class="mb-1 text-justify">
-                        //             ${blog.body.substr(0,150)}
-                        //             </p>
-                        //             <p style="cursor: pointer;" class="mb-1 font-weight-bold">read more <i class="fa fa-arrow-circle-right text-yellow mr-2" aria-hidden="true"></i> </i></p>
-                        //         </div>
-                        //     </div>`
-                        blogList.innerHTML += `
-                    <div class="row my-5">
-                        <div class="col-md-4">
-                            <img src="${root}/api/blogs/photo/${blog._id}" class="img-fluid1" alt="blog image" />
-                        </div>
-                        <div class="col-md-8" >
-                            <h3>${blog.title}</h3>
-
-                            <div class="mb-2 iconList">
-
-                                <div>
-                                    <i class="fa fa-calendar text-yellow" aria-hidden="true"></i> &nbsp;
-                                    ${moment(blog.createdAt).format("MMM Do[,] YYYY")}
-                                </div>
-                            </div>
-                            <p class="mb-1 text-justify">
-                            ${blog.body.substr(0, 150)}
-                            </p>
-                            <p style="cursor: pointer;" class="mb-1 font-weight-bold position-relative">read more <i class="fa fa-arrow-circle-right text-yellow mr-2" aria-hidden="true"></i> </i>
-                            <a class="stretched-link" href="/blogview.html?id=${blog._id}" ></a>
-                             </p>
-                        </div>
-                    </div>
-                `
-                    });
+                    noBlog()
                 }
-
             } catch (error) {
-                console.log(error);
+                noBlog()
             }
+
+
+
         }
-        const fetchCategories = async () => {
-            try {
-                const categories = await axios.get(`${root}/api/categories`);
-                categories.data.forEach(cat => {
-                    CategoriesList.innerHTML += `<li>${cat.name}</li>`
-                })
-            } catch (error) {
-                console.log(error);
-            }
+        const noBlog = () => {
+            document.getElementById("blog-id").innerHTML = `
+                            <div class="d-flex justify-content-center">
+                               <h3>blog not found</h3>
+                            </div>
+                `
         }
 
 
 
-        fetchBlogs();
-        fetchCategories()
-
+        renderBlog();
 
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

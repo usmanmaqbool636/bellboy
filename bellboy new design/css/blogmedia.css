@@ -3,7 +3,7 @@
 @media (max-width: 575.98px) {
     .header-content-container-blog {
         height         : 260px;
-        background-size: 115px !important;
+        background-size: 300px !important;
     }
 
     .header-content-blog {
@@ -25,7 +25,8 @@
 @media (max-width: 400.98px) {
     .header-content-container-blog {
         height         : 220px;
-        background-size: 100px !important;
+        background-size: 250px !important;
+        background-position:110% 50% !important
     }
 
     .header-content-blog {
@@ -54,7 +55,7 @@
 @media (min-width: 576px) {
     .header-content-container-blog {
         height         : 400px;
-        background-size: 170px;
+        background-size: 440px;
     }
 
     .header-content-blog {
@@ -97,7 +98,7 @@
     }
     .header-content-container-blog{
         height: 500px;
-        background-size: 220px !important;
+        background-size: 550px !important;
     }
     .header-content-blog button{
         padding: .8rem 2.5rem !important;
@@ -136,7 +137,7 @@
     }
     .header-content-container-blog{
         height: 600px;
-        background-size: 240px !important;
+        background-size: 600px !important;
     }
     .container{
         max-width: 85% !important ;
@@ -158,8 +159,9 @@
         font-size: 1.15rem !important;
     }
     .header-content-container-blog{
+        background-position: 100% -40% !important;
         height: 650px;
-        background-size: 240px !important;
+        background-size: 600px !important;
     }
 }
 
