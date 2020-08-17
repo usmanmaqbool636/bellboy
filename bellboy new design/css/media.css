@@ -147,6 +147,13 @@
     .footer-icons i {
         font-size: 1em !important;
     }
+    .blog{
+        flex-direction: column !important;
+    }
+  
+    .iconList{
+        flex-direction: column;
+    }
     
 }
 
@@ -228,6 +235,17 @@
     .content-logo-text {
         margin-top: -1rem;
     }
+    .blog{
+        flex-direction: column !important;
+    }
+    .blog .img-contaier{
+        height: auto !important;
+        width: 100% !important;
+        margin:0 0 1rem 0;
+    }
+    .iconList{
+        flex-direction: column;
+    }
   
 }
 
@@ -278,6 +296,9 @@
     .newsletter>div:first-child {
         width: 72% !important;
     }
+    .blog-container{
+        max-width: 92% !important ;
+    }
     
 }
 
@@ -314,6 +335,9 @@
     .newsletter-form {
         float: right;
     }
+    .blog-container{
+        max-width: 85% !important ;
+    }
    
 }
 
@@ -334,6 +358,9 @@
     }
 
     .newsletter-form .btn {}
+    .blog-container{
+        max-width: 85% !important ;
+    }
 }
 
 @media (min-width: 1400px) {
@@ -352,5 +379,8 @@
     .contact-number h2 {
         font-size  : 3.2vw !important;
         line-height: 0.5;
+    }
+    .blog-container{
+        max-width: 95rem !important;
     }
 }

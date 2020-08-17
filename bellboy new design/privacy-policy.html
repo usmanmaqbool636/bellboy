@@ -1,0 +1,522 @@
+<!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN” “http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="./img/Running.svg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/Running.svg">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/Running.svg">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/Running.svg">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/Running.svg">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/normalie.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>bellboy</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+    <header class="container-fluid  p-0">
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg  bg-transparent navbar-light bg-light">
+            <a class="navbar-brand" href="/"><img src="./img/header/logo.svg" width="160" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto float-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog.html">Blog</a>
+                    </li>
+
+                    <li class="nav-item ml-3 ">
+                        <a class="nav-link btn text-white nav-button" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                            Become bellboy
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- navBar -->
+
+
+
+        <div class="container-fluid slideshow-container">
+
+            <div class="mySlides">
+                <div class="row  header-content-container ">
+                    <div class=" header-content">
+                        <h1 class="fade1">Hire a Bellboy</h1>
+                        <p class="">As your personal assistant</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="row  header-content-container ">
+                    <div class=" header-content">
+                        <h1>We Deliver </h1>
+                        <p class="fade1"> Groceries </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="row  header-content-container ">
+                    <div class=" header-content">
+                        <h1>We Deliver </h1>
+                        <p class="fade1"> Medicines</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="row  header-content-container ">
+                    <div class=" header-content">
+                        <h1>We Deliver </h1>
+                        <p class="fade1">Food</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="row  header-content-container ">
+                    <div class=" header-content">
+                        <h1>We Deliver </h1>
+                        <p class="fade1"> Fruits & Vegetables </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active1", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+            setInterval(() => {
+                showSlides(slideIndex += 1)
+            }, 2000);
+        </script>
+
+
+    </header>
+
+    <!-- Become A bellboy  from modal-->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Become a BellBoy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" class="form-control" placeholder="Enter your Email">
+                        </div>
+                        <div class="form-group">
+                            <label>Contact No</label>
+                            <input type="text" class="form-control" placeholder="Contact no">
+                        </div>
+                        <div class="form-group">
+                            <label>Why you want to join</label>
+                            <textarea placeholder="why you want to join" class="form-control" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn bg-yellow text-white" data-dismiss="modal">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal -->
+
+    <main class="p-0 m-0">
+        <section class="container my-5">
+            <div class="privacy-policy py-5">
+                <h1>
+                    BELLBOY PRIVACY POLICY
+                </h1>
+                <p>Bellboy Technology (Pvt.) Limited (hereinafter known as “the Company”) may collect personal
+                    information from you in relation to your activities on the Website/Mobile
+                    Application/Software.&nbsp;&nbsp;This Privacy Policy outlines how the Company will handle and use
+                    your personal information when you visit the Bellboy Website, Mobile Application and/or any Services
+                    associated with the Privacy Policy. </p>
+                <p>You accept that by clicking “I Agree” on the Website/ Mobile Application that you will use the
+                    Website/ Bellboy Mobile Application and/or any other Services associated with the Application in
+                    accordance with this Privacy Policy.&nbsp;You further consent to the use and sharing of your
+                    personal information as outlined in this Privacy Policy. If you do not accede to the Company’s
+                    Privacy Policy then you should not access the Website/Bellboy Mobile Application services and you
+                    should not provide us with any of your personal information. </p>
+                <p>You confirm that your access and use of the Bellboy Mobile Application, software and/or any services
+                    linked with the Mobile Application are also subject to the Company’s Terms and Conditions, which you
+                    have consented in order to use the above. </p>
+                <p><strong>1.&nbsp;&nbsp;&nbsp;Collection of Personal Information: </strong></p>
+                <p>When you use the Website, Bellboy Mobile Application, software and services, the Company may collect
+                    the following information about you. </p>
+                <p><strong>a.&nbsp;&nbsp;&nbsp;Information You Provide Directly: </strong></p>
+                <p>You may provide information to us when you use the Website, Bellboy Mobile Application/Software
+                    and/or any services linked with the Mobile Application.&nbsp;This information can include but is not
+                    limited to: your name, age, date of birth, email address, gender, mobile telephone number,
+                    residential address, preferred location, NIC/CNIC number, bank and bank account information, credit
+                    and/or debit card information, order payment information including any reimbursement requests and
+                    other information that will identify you to the Company. </p>
+                <p><strong>b.&nbsp;&nbsp;&nbsp;Information that is Collected Automatically: </strong></p>
+                <p>-We may receive and store certain information about you and your device(s) automatically when you
+                    sign up for the Bellboy Mobile Application and use our Services. This information may include but is
+                    not limited to: </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Information in relation to the
+                    device you use to access the Bellboy Mobile Application </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and Services; </p>
+                <p>-The type of web browser and operating system your device is using to access the Bellboy Mobile
+                    Application and Services; </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Your IP Address;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-The Domain name of your Internet
+                    Service Provider; </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Your location; </p>
+                <p>-The specific pages you visit, content you view, features you use and the date and time stamp of your
+                    visits to the Bellboy Mobile Application;</p>
+                <p>-Any search terms used, history of websites visited prior to your access to the Bellboy Mobile
+                    Application app, and other clickstream data. </p>
+                <p><strong>2.&nbsp;&nbsp;&nbsp;Use of Your Personal Information</strong></p>
+                <p>We may use the information we collect or receive about you for various purposes.</p>
+                <p>a<em>.&nbsp;<u>To Provide You With the Services</u></em></p>
+                <p>We use your information to provide you the Services. For example, we use credit card information to
+                    complete a transaction or an address to allow the Bellboy to fulfill your delivery. If the
+                    applicable information is to be provided or Service is to be performed by a third party, then we
+                    will disclose the applicable Personal Information to the third party providing the information or
+                    performing applicable Services. Your information may be available or provided to third-party service
+                    providers and that are contractually obligated to protect your information as disclosed in this
+                    Policy.</p>
+                <p>b<em>.&nbsp;<u>To Maintain, Improve, and Personalize the Services</u></em></p>
+                <p>We use your information for our everyday business operations such as auditing, administration of the
+                    Services, forum management, fulfillment, and analytics. Your information may also be used to improve
+                    the content and/or functionality of the Services. We may use your information to help us improve
+                    offerings for Bellboy and/or our Merchants. We also use your information to personalize your
+                    experience. For example, we may personalize the content and features you see when visiting our
+                    Services. In addition, we may personalize advertisements, marketing communications, and
+                    recommendations to make them more tailored to your interests.</p>
+                <p>c<em>.&nbsp;<u>To Communicate with You</u></em></p>
+                <p>We use your information to communicate with you. For example, we may send you text messages or other
+                    notifications about the status of your orders, deliveries and ride hires. We may also contact you
+                    with promotional offerings or other communications that may be of interest to you. If we send you
+                    marketing emails about services that may interest you, each email will contain instructions
+                    permitting you to “opt-out” of receiving future email marketing communications.</p>
+                <p>In the event you contact us, we use certain information to respond to your questions and assist you
+                    with any issues that may arise in your use of the Services. If you send text messages to a Bellboy,
+                    using the telephone number for that Bellboy available on the Services, we may use a third-party
+                    service provider to track and analyze these text messages. We track these text messages for fraud
+                    prevention, to ensure appropriate charging of fees, to enforce our Terms and Conditions, and for
+                    quality and training purposes. As part of this process, Bellboy and its service provider will
+                    receive in real time and store data about your text message, including the date and time of the text
+                    message, your phone number, and the content of the text message. You will not be able to opt out of
+                    transactional text messages between you and Bellboy.</p>
+                <p>d<em>.&nbsp;<u>For Account and Network Security Purposes</u></em></p>
+                <p>We care about keeping you secure and safe while using our Services. Keeping you safe requires us to
+                    process your Personal Information, such as your device information, activity information and other
+                    relevant information. We use such information to combat spam, malware, malicious activity or
+                    security risks; improve and enforce our security measures; and to monitor and verify your identity
+                    so that unauthorized users do not gain access to your information.</p>
+                <p>e<em>.&nbsp;<u>To Maintain Legal and Regulatory Compliance</u></em></p>
+                <p>Our Services are subject to certain laws and regulations which may require us to process your
+                    Personal Information. For example, we process your Personal Information to pay our taxes, to fulfill
+                    our business obligations, ensure compliance with employment and recruitment laws or as necessary to
+                    manage risk as required under applicable law.</p>
+                <p>f<em>.&nbsp;<u>To Enforce Compliance with Our Terms and Conditions and Policies</u></em></p>
+                <p>When you access or use our Services, you are bound to our Terms and Conditions and this Policy. To
+                    ensure you comply with them, we process your Personal Information by actively monitoring,
+                    investigating, preventing and mitigating any alleged or actual prohibited, illicit or illegal
+                    activities on our Services. We also process your Personal Information to: investigate, prevent or
+                    mitigate violations of our internal terms, agreements or policies; enforce our agreements with third
+                    parties and business partners.</p>
+                <p>g<em>.&nbsp;<u>To Protect You, Others, and Our Business</u></em></p>
+                <p>We use your information to protect you, others, and our business, including, without limitation,
+                    using information for fraud prevention, for enforcement of our Terms of Service, to comply with the
+                    law, and to protect against security risks.</p>
+                <p>h<em>.&nbsp;<u>For Our Business Purposes</u></em></p>
+                <p>We may use your information for any other purpose disclosed to you at the time we collect or receive
+                    the information, or otherwise with your consent.</p>
+                <p><br></p>
+                <p><strong>3.&nbsp;&nbsp;&nbsp;Sharing of Personal Information with Third Parties</strong></p>
+                <p>We share your Personal Information as described below.</p>
+                <p>a<em>.&nbsp;<u>Service Providers</u></em></p>
+                <p>We may share your information with our third-party service providers for certain business purposes.
+                    This information is provided in order for them to provide us services such as payment processing,
+                    advertising services, marketing partners, web analytics, data processing, IT services, customer
+                    support and other services. These third-party service providers have access to your Personal
+                    Information only for the purpose of performing services on our behalf and are expressly obligated
+                    not to disclose or use your Personal Information for any other purpose.</p>
+                <p>b<em>.&nbsp;<u>Bellboys and Third Party Vendors</u></em></p>
+                <p>To help provide you with a high-quality delivery we also may share your information, including your
+                    Personal Information and order details, with the Bellboys who complete your requested deliveries
+                    and/or services. Similarly, we may share information with third party vendors to facilitate
+                    deliveries such as your first name and last initial and order information related to your orders
+                    with our Bellboy vendors.</p>
+                <p>c<em>.&nbsp;<u>Related Entities</u></em></p>
+                <p>We may share your information with our affiliates (entities that control or are under the control of
+                    Bellboy) for business purposes. We will require these entities to comply with the terms of this
+                    Policy with regard to their use of your information.</p>
+                <p>d<em>.&nbsp;<u>When Required by Law</u></em></p>
+                <p>We recognize that information related to your orders could contain private information. However, we
+                    may be required to disclose your information to third parties including law enforcement agencies
+                    when required to protect and defend our legal rights, protect the safety and security of users of
+                    our Services, prevent fraud, comply with the law, respond to legal process, or a request for
+                    cooperation by a government entity. </p>
+                <p>e<em>.&nbsp;<u>Corporate Transactions</u></em></p>
+                <p>In the event of sale, transfer, merger, reorganization, dissolution, or similar event we may transfer
+                    your information to one or more third parties as part of that transaction, including during the
+                    negotiation of an actual or contemplated transaction.</p>
+                <p>f<em>.&nbsp;<u>With Your Consent</u></em></p>
+                <p>We also may share or disclose your information with your consent or at your direction.</p>
+                <p><u>Third Parties and Links</u>&nbsp;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We
+                    may pass your details to other companies in our group. We may also pass your details to our agents
+                    and subcontractors to help us with any of our uses of your data set out in our Privacy Policy. For
+                    example, we may use third parties to assist us with delivering products to you, to help us to
+                    collect payments from you, to analyze data and to provide us with marketing or customer service
+                    assistance. </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We
+                    may exchange information with third parties for the purposes of fraud protection and credit risk
+                    reduction. We may transfer our databases containing your personal information if we sell our
+                    business or part of it. Other than as set out in this Privacy Policy, We shall NOT sell or disclose
+                    your personal data to third parties without obtaining your prior consent unless this is necessary
+                    for the purposes set out in this Privacy Policy or unless we are required to do so by law. The
+                    Mobile Application and/or Services may contain advertising of third parties and links to other sites
+                    or frames of other sites. Please be aware that we are not responsible for the privacy practices or
+                    content of those third parties or other sites, nor for any third party to whom we transfer your data
+                    in accordance with our Privacy Policy.</p>
+                <p><strong>4.&nbsp;&nbsp;&nbsp;Social Media</strong></p>
+                <p><br></p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By
+                    granting us access to any Third-Party Accounts, you understand that (1) we may access, make
+                    available, and store (if applicable) any content that you have provided to and stored in your
+                    Third-Party Account (the “Social Network Content”) so that it is available on and through the Site
+                    via your account, including without limitation any friend lists and (2) we may submit to and receive
+                    from your Third-Party Account additional information to the extent you are notified when you link
+                    your account with the Third-Party Account. </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Depending
+                    on the Third-Party Accounts you choose and subject to the privacy settings that you have set in such
+                    Third-Party Accounts, personally identifiable information that you post to your Third-Party Accounts
+                    may be available on and through your account on the Mobile Application. Please note that if a
+                    Third-Party Account or associated service becomes unavailable or our access to such Third-Party
+                    Account is terminated by the third-party service provider, then Social Network Content may no longer
+                    be available on and through the Mobile Application. </p>
+                <p>&nbsp;&nbsp;&nbsp;iii.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You will have
+                    the ability to disable the connection between your account on the Mobile Application and your
+                    Third-Party Accounts at any time. PLEASE NOTE THAT YOUR RELATIONSHIP WITH THE THIRD-PARTY SERVICE
+                    PROVIDERS ASSOCIATED WITH YOUR THIRD-PARTY ACCOUNTS IS GOVERNED SOLELY BY YOUR AGREEMENT(S) WITH
+                    SUCH THIRD-PARTY SERVICE PROVIDERS. </p>
+                <p>&nbsp;&nbsp;&nbsp;iv.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We make no
+                    effort to review any Social Network Content for any purpose, including but not limited to, for
+                    accuracy, legality, or non-infringement, and we are not responsible for any Social Network Content.
+                    You acknowledge and agree that we may access your email address book associated with a Third-Party
+                    Account and your contacts list stored on your mobile device or tablet computer solely for purposes
+                    of identifying and informing you of those contacts who have also registered to use the Mobile
+                    Application </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You
+                    can deactivate the connection between the Mobile Application and your Third-Party Account by
+                    contacting us using the contact information below or through your account settings (if applicable).
+                    We will attempt to delete any information stored on our servers that was obtained through such
+                    Third-Party Account, except the username and profile picture that become associated with your
+                    account.</p>
+                <p><strong>5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Use of Cookies </strong></p>
+                <p>The acceptance of cookies is not a requirement for visiting the Mobile Application. However we would
+                    like to point out that the use of the 'basket' functionality on the Application and ordering is only
+                    possible with the activation of cookies. Cookies are tiny text files which identify your computer to
+                    our server as a unique user when you visit certain pages on the Site and they are stored by your
+                    Internet browser on your computer's hard drive. Cookies can be used to recognize your Internet
+                    Protocol address, saving you time while you are on, or want to enter, the Mobile Application. We
+                    only use cookies for your convenience in using the Application (for example to remember who you are
+                    when you want to amend your shopping cart without having to re-enter your email address) and not for
+                    obtaining or using any other information about you (for example targeted advertising). Your browser
+                    can be set to not accept cookies, but this would restrict your use of the Application. Please accept
+                    our assurance that our use of cookies does not contain any personal or private details and are free
+                    from viruses. If you want to find out more information about cookies, go to <a
+                        href=\"https://www.allaboutcookies.org/\" rel=\"noopener noreferrer\"
+                        target=\"_blank\">https://www.allaboutcookies.org</a>&nbsp;or to find out about removing them
+                    from your browser, go to <a href=\"https://www.allaboutcookies.org/manage-cookies/index.html\"
+                        rel=\"noopener noreferrer\"
+                        target=\"_blank\">https://www.allaboutcookies.org/manage-cookies/index.html</a>. </p>
+                <p> </p>
+                <p> This Mobile Application uses Google Analytics, a web analytics service provided by Google, Inc.
+                    (\"Google\"). Google Analytics uses cookies, which are text files placed on your computer, to help
+                    the website analyze how users use the site. The information generated by the cookie about your use
+                    of the Mobile Application (including your IP address) will be transmitted to and stored by Google on
+                    servers in the United States. Google will use this information for the purpose of evaluating your
+                    use of the website, compiling reports on website activity for website operators and providing other
+                    services relating to website activity and internet usage. Google may also transfer this information
+                    to third parties where required to do so by law, or where such third parties process the information
+                    on Google's behalf. Google will not associate your IP address with any other data held by Google.
+                    You may refuse the use of cookies by selecting the appropriate settings on your browser, however
+                    please note that if you do this you may not be able to use the full functionality of this website.
+                    By using this Mobile Application, you consent to the processing of data about you by Google in the
+                    manner and for the purposes set out above.</p>
+                <p><strong>6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Security</strong></p>
+                <p>We have in place appropriate technical and security measures to prevent unauthorized or unlawful
+                    access to or accidental loss of or destruction or damage to your information. When we collect data
+                    through the Site, we collect your personal details on a secure server, which encrypts the data that
+                    is collected. We use firewalls on our servers. Our security procedures mean that we may occasionally
+                    request proof of identity before we disclose personal information to you. You are responsible for
+                    protecting against unauthorized access to your password and to your computer.</p>
+                <p><strong>7.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your rights</strong></p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If
+                    you are concerned about your data you have the right to request access to the personal data, which
+                    we may hold or process about you. You have the right to require us to correct any inaccuracies in
+                    your data free of charge. At any stage you also have the right to ask us to stop using your personal
+                    data for direct marketing purposes.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You
+                    further have the right to be notified by the Company within 72 hours of your personal information
+                    being breached on the Company’s services.&nbsp;The Company is under obligation to inform you of the
+                    breach within that time period and outline any steps to be taken to remedy such breach. </p>
+                <p>&nbsp;&nbsp;&nbsp;iii.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In addition
+                    to the above the User also has the right to ask the Company at any time by writing to the Company at
+                    the relevant contact details (email, office address etc) to erase any and all Data and/or personal
+                    information connected with their Bellboy User Account on the Mobile Application.&nbsp;It is noted
+                    that the Company will comply with the above request within 24 hours of receiving said notice and
+                    erase the User’s information completely from their servers without keeping a backup. &nbsp;Upon such
+                    a request being carried out, the User must be warned that their Bellboy account and any information
+                    associated with it will no longer exist.&nbsp;</p>
+                <p><br></p>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center py-2">
+                <div data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500" data-aos-offset="0"
+                    class="col-12 contact-number-bg">
+                    <div class="contact-number">
+                        <div class="">
+                            <h5>Call us to hire a bellboy</h5>
+                            <h2>+92 304 111 2355</h2>
+                            <h5>info@bellboy.pk</h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="about" class="col-10 text-center content-logo-text offset">
+                    <img src="./img/header/logo.svg" class="mb-4" width="160" alt="">
+                    <p class="text-white para">
+                        Bellboy has been created to develop opportunities for job seekers affected by corona or other
+                        reasons, taking care of delivery or any specific task for household or any other customer
+                        requirements. Our platform provides personal assistance and delivery
+                        services for all your needs, while you stay at home with peace of mind our bellboys will take
+                        care of the rest following safety SOPs in these challenging times.
+                    </p>
+                    <div class="footer-icons">
+                        <a href="https://twitter.com/bellboyco/" target="_blank" rel="noreferrer">
+                            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/bellboyco/" target="_blank" rel="noreferrer">
+                            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/bellboy_co/" target="_blank" rel="noreferrer">
+                            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/bellboyco/" target="_blank" rel="noreferrer">
+                            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <!-- <a href="#" target="_blank">
+                            <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
+                        </a> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center p-2">
+            <p class="text-white para">
+                All right reserved 2020 - <span class="text-yellow">Bellboy Technology Pvt. Ltd.</span>
+                &nbsp;&nbsp;
+                <a href="./privacy-policy.html" class="text-white">Privacy-Policy</a>
+                &nbsp;&nbsp;
+                <a href="./termandconditions.html" class="text-white">term and condition</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

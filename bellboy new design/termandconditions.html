@@ -1,0 +1,989 @@
+<!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN” “http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="./img/Running.svg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="./img/Running.svg">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/Running.svg">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/Running.svg">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/Running.svg">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/normalie.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>bellboy</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+    <header class="container-fluid  p-0">
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg  bg-transparent navbar-light bg-light">
+            <a class="navbar-brand" href="/"><img src="./img/header/logo.svg" width="160" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto float-right">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog.html">Blog</a>
+                    </li>
+
+                    <li class="nav-item ml-3 ">
+                        <a class="nav-link btn text-white nav-button" data-toggle="modal"
+                            data-target="#exampleModalCenter">
+                            Become bellboy
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- navBar -->
+
+
+
+        <div class="container-fluid slideshow-container">
+
+            <div class="mySlides">
+                <div class="row  header-content-container ">
+                    <div class=" header-content">
+                        <h1 class="fade1">Hire a Bellboy</h1>
+                        <p class="">As your personal assistant</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="row  header-content-container ">
+                    <div class=" header-content">
+                        <h1>We Deliver </h1>
+                        <p class="fade1"> Groceries </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="row  header-content-container ">
+                    <div class=" header-content">
+                        <h1>We Deliver </h1>
+                        <p class="fade1"> Medicines</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="row  header-content-container ">
+                    <div class=" header-content">
+                        <h1>We Deliver </h1>
+                        <p class="fade1">Food</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="row  header-content-container ">
+                    <div class=" header-content">
+                        <h1>We Deliver </h1>
+                        <p class="fade1"> Fruits & Vegetables </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active1", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+            setInterval(() => {
+                showSlides(slideIndex += 1)
+            }, 2000);
+        </script>
+
+
+    </header>
+
+    <!-- Become A bellboy  from modal-->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Become a BellBoy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" class="form-control" placeholder="Enter your Email">
+                        </div>
+                        <div class="form-group">
+                            <label>Contact No</label>
+                            <input type="text" class="form-control" placeholder="Contact no">
+                        </div>
+                        <div class="form-group">
+                            <label>Why you want to join</label>
+                            <textarea placeholder="why you want to join" class="form-control" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn bg-yellow text-white" data-dismiss="modal">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modal -->
+
+    <main class="p-0 m-0">
+        <section class="container my-5">
+            <div class="privacy-policy py-5">
+                <h1>
+                    Bellboy Terms and Conditions
+                </h1>
+
+                <p>PLEASE READ THE TERMS AND CONDITIONS CAREFULLY.&nbsp;THE TERMS AND CONDITIONS (“AGREEMENT”)
+                    CONSTITUTE A LEGAL AGREEMENT BETWEEN YOU AND BELLBOY TECHONOLOGY PRIVATE LIMTIED, A PAKISTAN BASED
+                    COMPANY </p>
+                <p>&nbsp;</p>
+                <p>By accessing, downloading, installing or using the Company’s Website, mobile application
+                    (<strong><em>“Application”</em></strong>) or any other software supplied by the Company
+                    (collectively, with the Application, the&nbsp;<strong><em>“Software”</em></strong>), accessing or
+                    using any information, services, features or resources available or enabled via the Mobile
+                    Application or Software (each, a&nbsp;<strong><em>“Service”</em></strong>&nbsp;and collectively,
+                    the&nbsp;<strong><em>“Services”</em></strong>)), and explicitly clicking on a button to agree to the
+                    following terms and conditions or taking similar action to signify your affirmative acceptance of
+                    this Agreement, or completing the Bellboy account registration process, you hereby represent that:
+                    (1) you have read, understand, and agree to be bound by this Agreement and any future amendments and
+                    additions to this Agreement as published from time to time on the Bellboy Mobile Application or
+                    through the Services; (2) you are of legal age in the jurisdiction in which you reside to form a
+                    binding contract with the Company; and (3) you have the authority to enter into the Agreement
+                    personally and, if applicable, on behalf of any company, organization or other legal entity you have
+                    named as the user during the Bellboy account registration process and to bind that company,
+                    organization or entity to the Agreement. The terms “you,” “user” and “users” refer to all
+                    individuals and other persons who access or use the Mobile Application, Software, and/or Services,
+                    including, without limitation, any companies, organizations or other legal entities that register
+                    accounts or otherwise access or use the Services through their respective employees, agents or
+                    representatives.&nbsp;<strong><em>Except as otherwise provided herein, if you do not agree to be
+                            bound by the Agreement, you may not access or use the Website, Mobile Application, the
+                            Services, or the Software.</em></strong></p>
+                <p>Subject to Section 15(h) of this Agreement, the Company reserves the right to modify the terms and
+                    conditions of this Agreement or its policies relating to the Application, Software or Services at
+                    any time, effective upon posting of an updated version of this Agreement on the Website, Mobile
+                    Application or Software. You should regularly review this Agreement, as your continued use of the
+                    Services after any such changes constitutes your agreement to such changes.</p>
+                <p><br></p>
+                <p><strong>1. Bellboy Services </strong></p>
+                <p><br></p>
+                <p>The Services comprise mobile applications and related services (each, an \"Application\"), which
+                    enable users to arrange and schedule transportation, logistics, home services and/or delivery
+                    services and/or to purchase certain goods, including with third party providers of such services and
+                    goods under agreement with Bellboy or Third Party Providers. In certain instances the Services may
+                    also include an option to receive transportation, logistics and/or delivery services for an upfront
+                    price, subject to acceptance by the respective Third Party Providers. Unless otherwise agreed by
+                    Bellboy in a separate written agreement with you, the Services are made available solely for your
+                    personal, non-commercial use. YOU ACKNOWLEDGE THAT YOUR ABILITY TO OBTAIN TRANSPORTATION, LOGISTICS,
+                    HOME SERVICES AND/OR DELIVERY SERVICES THROUGH THE USE OF THE SERVICES DOES NOT ESTABLISH BELLBOY AS
+                    A PROVIDER OF TRANSPORTATION, LOGISTICS OR DELIVERY SERVICES OR AS A TRANSPORTATION CARRIER.</p>
+                <p><br></p>
+                <p><br></p>
+                <p>The Company uses a network of their own employees and/or independent third-party contractors
+                    (<strong><em>Bellboys</em></strong>) who provide the following services to our Users/Customers: </p>
+                <p>(a) <strong>Delivery</strong> (delivery of groceries, medicines, food, fruits &amp; vegetables, meat,
+                    or anything else)</p>
+                <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Grocery delivery: User/Customer can order
+                    Groceries from the preferred store or nearby shop to their doorstep, and there is no minimum
+                    purchase for the order.</p>
+                <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Medicines delivery: If User/Customer need
+                    medicines, simply place the order on Bellboy with the picture of the prescription and our Bellboy
+                    will deliver from your nearest medical store</p>
+                <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Food delivery: Food delivery can be either
+                    store or restaurant based and the User/Customer can order anything irrespective of the size of the
+                    order.</p>
+                <p>-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fruits &amp; Vegetables: We also offer fruits
+                    &amp; vegetables delivery in urgent need from your known neighboring stores</p>
+                <p><br></p>
+                <p>(b)<strong> Hire-a-Bellboy</strong>: User/Customer can hire-a-bellboy as a personal assistant for
+                    certain period of time, to do multiple or specific outdoor jobs on your behalf, such as research of
+                    any product (sanitary market prices &amp; latest pictures or school’s visits to collect prospectus),
+                    collect laundry, parcel/gift delivery, bills payment, exchange from a certain store etc.</p>
+                <p>It is up to each Bellboy to provide such Delivery and/or Home services. The Food and Grocery Store
+                    Service Providers available through our Services (<strong><em>“Food Service
+                            Providers”</em></strong>) also operate independently of the Company. The Company will not
+                    assess the suitability, legality or ability of any Bellboy or Food Service Provider. The Company is
+                    not responsible for the Food Service Providers’ food preparation or safety and does not verify their
+                    compliance with applicable laws or regulations. The Company has no responsibility or liability for
+                    acts by any third party Food Service Provider or Bellboy, other than as stated herein.</p>
+                <p><br></p>
+                <p><strong>2. User Representations, Warranties and Covenants</strong></p>
+                <p>By using the Services, you expressly represent and warrant that you can enter into legally binding
+                    contracts and are over the age of 18. Your participation in using the Services is for your sole,
+                    personal or internal business use. When using the Services, you agree to comply with all applicable
+                    laws from your home nation, and the country, province and city in which you are present while using
+                    the Services.</p>
+                <p>You may only access the Services using authorized means. It is your responsibility to check to ensure
+                    you download the correct Software for your device. The Company is not liable if you do not have a
+                    compatible device or if you have downloaded the wrong version of the Software for your device. The
+                    Company reserves the right to terminate your use of the Software and/or Services should you be using
+                    the Software or Services with an incompatible or unauthorized device.</p>
+                <p>By using the Services, you agree that:</p>
+                <p>a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You will only use the Services for lawful purposes; you will not use
+                    the Services for sending or storing any unlawful material or for deceptive or fraudulent purposes.
+                </p>
+                <p>b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You will not use the Services to cause harassment, nuisance,
+                    annoyance, inconvenience or make a false booking. </p>
+                <p>c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You will not send, use or reuse any material that does not belong to
+                    you; or is illegal, offensive, deceptive, misleading, abusive, indecent, harassing, blasphemous,
+                    defamatory, libelous, obscene, pornographic, pedophilic or menacing; ethnically objectionable,
+                    disparaging or in breach of copyright, trademark, confidentiality, privacy or any other proprietary
+                    information or right; or is otherwise injurious to third parties; or relates to or promotes money
+                    laundering or gambling; or is harmful to minors in any way; or impersonates another person; or
+                    threatens the unity, integrity, security or sovereignty of Pakistan or friendly relations with
+                    foreign States; or objectionable or otherwise unlawful in any manner whatsoever; or which consists
+                    of or contains software viruses, political campaigning, commercial solicitation, chain letters, mass
+                    mailings or any \"spam”.</p>
+                <p>d)&nbsp;&nbsp;&nbsp;&nbsp;You will not use the Services, or any content accessible through the
+                    Services, for any commercial purpose, including but not limited to contacting, advertising to,
+                    soliciting or selling to, any Grocery Store and Food Service Provider, user or Bellboy, unless the
+                    Company has given you permission to do so in writing.</p>
+                <p>e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You will not copy, modify, alter and/or or distribute any part or
+                    whole of the Software or any content displayed through the Services without prior written permission
+                    from the Company.</p>
+                <p>f)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You will not create or compile, directly or indirectly, any
+                    collection, compilation, or other directory from any content displayed through the Services except
+                    for your personal, non-commercial use.</p>
+                <p>g)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You shall not intentionally or unintentionally cause any damage to
+                    the vehicle used by any of the Bellboy Riders and you warrant that you will be liable for any damage
+                    caused by you other than normal wear and tear. </p>
+                <p>h)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The information you provide to us when you register an account or
+                    otherwise communicate with us is accurate, you will promptly notify us of any changes to such
+                    information, and you will provide us with whatever proof of identity we may reasonably request.</p>
+                <p>i)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You are aware that when requesting Services by SMS text
+                    messages, standard-messaging charges will apply.</p>
+                <p>j)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You will keep secure and confidential your account
+                    password or any identification credentials we provide you, which allows access to the Services.</p>
+                <p>k)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You will only use the Services for your own personal use and/or
+                    internal business use and will not resell either the Software or Services to a third party.</p>
+                <p>l)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You will not use the Website, Mobile Application or
+                    Software in any way that could damage, disable, overburden or impair any Company server, or the
+                    networks connected to any Company server.</p>
+                <p>m)&nbsp;&nbsp;&nbsp;You will not attempt to gain unauthorized access to any part of the Website,
+                    Mobile Application and/or to any service, account, resource, computer system and/or network
+                    connected to any Company server.</p>
+                <p>n)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You will not deep-link to the Application or access the Application
+                    manually or with any robot, spider, web crawler, extraction software, automated process and/or
+                    device to scrape, copy or monitor any portion of the Application or any content on the Application,
+                    unless the Company has given you permission to do so in writing.</p>
+                <p>o)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You will not copy any content displayed through the Services,
+                    including but not limited to Food Service Providers’ menu content and reviews, any Supermarket or
+                    Market content and reviews, for republication in any format or media.</p>
+                <p>p)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You will not conduct any systematic retrieval of data or other
+                    content from the Website, Mobile Application, Software or Services.</p>
+                <p>q)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You will not try to harm other Users or the Company, the Website,
+                    Mobile Application, Software or Services in any way whatsoever.</p>
+                <p>r)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You will report any errors, bugs, unauthorized access
+                    methodologies or any breach of our intellectual property rights that you uncover in your use of the
+                    Website, Mobile Application, Software or Services.</p>
+                <p>s)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You agree that any goods including but not limited to medicines
+                    etc. being delivered to you are lawful and that the goods are not illegal, stolen and/or obtained
+                    unlawfully.&nbsp;You further agree to indemnify the Company should any goods delivered to you
+                    violate any prevailing laws and regulations. </p>
+                <p>t)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You agree that if you hire a Bellboy to delivery money on your
+                    behalf,that the Company will not be held liable should that money go missing and that you will give
+                    money to the Bellboy at your own risk. </p>
+                <p>u)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You agree that any medications you order through the Service or ask a
+                    Bellboy to deliver to you will be accompanied by a valid prescription and that the Company will not
+                    be held liable if that is not the case. </p>
+                <p>v)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You will not abuse our promotional or credit code system by redeeming
+                    multiple coupons at once.</p>
+                <p>&nbsp;</p>
+                <p><strong>2. User Account</strong></p>
+                <p>(a)&nbsp;&nbsp;&nbsp;To access certain services offered by the platform, you will be required to
+                    create an account with us or provide personal information to complete the creation of an account and
+                    to click “I Agree” on the button to consent to your information being used to operate your User
+                    Account. Please ensure that the details you provide us with are correct and complete at all times.
+                    You are obligated to update details about your account in real time by accessing your account
+                    online. </p>
+                <p><br></p>
+                <p>(b)&nbsp;&nbsp;You agree that in order to use the Services you must submit the following personal
+                    information and allow the Company to verify the same in order to register the Account: </p>
+                <p>-Name, Date of Birth, Age and Residential Address/Location </p>
+                <p>-Email Address and Current Mobile Number that is to be used to access the Services</p>
+                <p>That in addition to the above you agree that the Company has the right to request the following
+                    optional information from you: </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-User Gender </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-User Favorite Location (User can
+                    save preferred location) </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Access to your Contact List to
+                    invite or share the app with friends</p>
+                <p>(c)&nbsp;&nbsp;&nbsp;You agree to keep your password confidential and will be responsible for all use
+                    of your account and password. We reserve the right to remove, reclaim, or change a username you
+                    select if we determine, in our sole discretion, that such username is inappropriate, obscene, or
+                    otherwise objectionable. </p>
+                <p><br></p>
+                <p>(d)&nbsp;&nbsp;You are the sole authorized User of any account you create through the Services. You
+                    are solely and fully responsible for all activities that occur under your password or account. You
+                    agree that you shall monitor your account to prevent use by minors, and you will accept full
+                    responsibility for any unauthorized use of your password or your account by minors. You may not
+                    authorize others to use your User status, and you may not assign or otherwise transfer your User
+                    account to any other person or entity. Should you suspect that any unauthorized party might be using
+                    your password or account, you will notify the Company immediately. If you provide any information
+                    that is untrue, inaccurate, not current, or incomplete, or the Company has reasonable grounds to
+                    suspect that such information is untrue, inaccurate, not current, or incomplete, and the Company has
+                    the right to suspend or terminate your account and refuse any and all current or future use of the
+                    Services (or any portion thereof). You agree not to create an account or use the Services if the
+                    Company has previously removed you, or if you have been previously banned from use of the Services.
+                </p>
+                <p>\t<strong>4. Bellboy Platform and Intellectual Property Ownership</strong></p>
+                <p><br></p>
+                <p>(a) The Company alone (and its licensors, where applicable) shall own all rights, title and interest,
+                    including all related intellectual property rights, in and to the Software and the Services. This
+                    Agreement does not allow to you or grant any rights of ownership in or related to the Software or
+                    the Services, or any intellectual property rights owned by the Company. The Company name, the
+                    Company logo, and the product names associated with the Software and Services are trademarks of the
+                    Company or third parties, and no right or license is granted to use them. You agree that you will
+                    not remove, alter or obscure any copyright, trademark, service mark or other proprietary rights
+                    notices incorporated in or accompanying the Website, Mobile Application, the Software or the
+                    Services.</p>
+                <p>(b) You may use the software solely for purposes of enabling you to use and enjoy our services as
+                    permitted by the Terms and Conditions and any related applicable terms as available on the Website
+                    and Mobile Application. You may not incorporate any portion of the Software into your own programs
+                    or compile any portion of it in combination with your own programs, transfer it for use with another
+                    service, or sell, rent, lease, lend, loan, distribute or sub-license the Software or otherwise
+                    assign any rights to the Software in whole or in part. You may not use the Software for any illegal
+                    purpose. We may cease providing you service and we may terminate your right to use the Software at
+                    any time. Your rights to use the Software will automatically terminate without notice from us if you
+                    fail to comply with any of the Terms and Conditions listed here or across the Site.</p>
+                <p> </p>
+                <p> (c) When you use the Bellboy Mobile Application, you may also be using the services of one or more
+                    third parties, such as a wireless carrier or a mobile platform provider. Your use of these third
+                    party services may be subject to separate policies, terms of use, and fees of these third parties.
+                </p>
+                <p> </p>
+                <p> (d) You may not, and you will not encourage, assist or authorize any other person to copy, modify,
+                    reverse engineer, decompile or disassemble, or otherwise tamper with our software whether in whole
+                    or in part, or create any derivative works from or of the Software. In order to keep the Software
+                    up-to-date, we may offer automatic or manual updates at any time and without notice to you.</p>
+                <p><br></p>
+                <p><strong>5. User Content</strong></p>
+                <p><br></p>
+                <p>a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>User Content.</strong>&nbsp;The Company may provide you with
+                    interactive opportunities through the Services, including, by way of example, the ability to post
+                    User ratings and reviews (collectively, “User Content”). You represent and warrant that you are the
+                    owner of, or otherwise have the right to provide, all User Content that you submit, post and/or
+                    otherwise transmit (“Make Available”) through the Services. You hereby grant the Company a
+                    perpetual, irrevocable, transferable, fully paid, royalty-free, non-exclusive, worldwide, fully
+                    sub-licenseable right and license to use, copy, display, publish, modify, remove, publicly perform,
+                    translate, create derivative works, distribute and/or otherwise use the User Content in connection
+                    with the Company’s business and in all forms now known or hereafter invented (“Uses”), without
+                    notification to and/or approval by you. You further grant the Company a license to use your username
+                    and/or other User profile information, including without limitation your ratings history, to
+                    attribute User Content to you in connection with such Uses, without notification or approval by you.
+                </p>
+                <p><br></p>
+                <p>b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Feedback.</strong>&nbsp;You agree that any submission of any
+                    ideas, suggestions, and/or proposals to the Company through its suggestion, feedback, wiki, forum or
+                    similar pages (“Feedback”) is at your own risk and that the Company has no obligations (including
+                    without limitation, obligations of confidentiality) with respect to such Feedback. You represent and
+                    warrant that you have all rights necessary to submit the Feedback and you hereby grant to Company a
+                    perpetual, irrevocable, transferable, fully paid, royalty-free, non-exclusive, worldwide, fully
+                    sub-licenseable right and license to use, copy, display, publish, modify, remove, publicly perform,
+                    translate, create derivative works, distribute and/or otherwise use such Feedback.</p>
+                <p><br></p>
+                <p>c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Ratings and Reviews.</strong>&nbsp;To the extent that you are
+                    asked to rate and post reviews of Food Service Providers or other businesses (“Ratings” and
+                    “Reviews”), such Ratings and Reviews are considered User Content and are governed by this Agreement.
+                    Ratings and Reviews are not endorsed by the Company and do not represent the views of the Company or
+                    its affiliates. The Company does not assume liability for Ratings and Reviews or for any claims for
+                    economic loss resulting from such Ratings and Reviews. Because we strive to maintain a high level of
+                    integrity with respect to Ratings and Reviews posted or otherwise made available through the
+                    Services, you agree that: (i) you will base any Rating or Review on first-hand experience with the
+                    Food Service Provider or business; (ii) you will not provide a Rating or Review for any Food Service
+                    Provider or business for which you have an ownership interest, employment relationship or other
+                    affiliation or for any of that company’s competitors; (iii) you will not submit a Rating or Review
+                    in exchange for payment, free food items, or other benefits from a Food Service Provider or business
+                    and (iv) your review will comply with the terms of this Agreement. If we determine, in our sole
+                    discretion, that any Rating or Review could diminish the integrity of the Ratings and Reviews, we
+                    may exclude such User Content without notice.</p>
+                <p><br></p>
+                <p><br></p>
+                <p><strong>6. License to Access the Mobile Application and Services:</strong></p>
+                <p><br></p>
+                <p>a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We grant you a non-transferable, revocable and non-exclusive license
+                    to use the Website and Mobile Application, in accordance with the Terms and Conditions described
+                    herein, for the purposes of the services listed in this document and anything that will be added in
+                    the future. Commercial use or use on behalf of any third party is prohibited, except as explicitly
+                    permitted by us in advance. If you are registering as a business entity for internal business use,
+                    you represent that you have the authority to bind that entity to this User Agreement and that you
+                    and the business entity will comply with all applicable laws relating to online trading. Any breach
+                    of these Terms and Conditions shall result in the immediate revocation of the license granted in
+                    this paragraph without notice to you.</p>
+                <p><br></p>
+                <p>b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Content provided on the Website and Mobile Application is solely for
+                    informational purposes. Product representations including price, available stock, features, add-ons
+                    and any other details as expressed on this Site are the responsibility of the vendors displaying
+                    them and is not guaranteed as completely accurate by us. Submissions or opinions expressed on this
+                    Site are those of the individual(s) posting such content and may not reflect our opinions.</p>
+                <p><br></p>
+                <p>c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We grant you a limited license to access and make personal use of the
+                    Website and Mobile Application, but not to download (excluding page caches) or modify the Site or
+                    any portion of it in any manner. This license does not include any resale or commercial use of this
+                    Site or its contents; any collection and use of any product listings, descriptions, or prices; any
+                    derivative use of this Site or its contents; any downloading or copying of account information for
+                    the benefit of another seller; or any use of data mining, robots, or similar data gathering and
+                    extraction tools.</p>
+                <p><br></p>
+                <p>d)&nbsp;&nbsp;&nbsp;&nbsp;This Website and Mobile Application or any portion of it (including but not
+                    limited to any copyrighted material, trademarks, or other proprietary information) may not be
+                    reproduced, duplicated, copied, sold, resold, visited, distributed or otherwise exploited for any
+                    commercial purpose without express written consent by the Company as may be applicable.</p>
+                <p> </p>
+                <p> You agree and undertake not to perform restricted activities listed within this section; undertaking
+                    these activities will result in an immediate cancellation of your account, services, reviews, orders
+                    or any existing incomplete transaction with us and in severe cases may also result in legal action.
+                </p>
+                <p>&nbsp;</p>
+                <p>e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Refusal to comply with the Terms and Conditions described herein or
+                    any other guidelines and policies related to the use of the Site as available on the Site at all
+                    times.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Impersonate
+                    any person or entity or to falsely state or otherwise misrepresent your affiliation with any person
+                    or entity.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ii.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use
+                    the Website, Mobile Application and Services for illegal purposes.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Attempt
+                    to gain unauthorized access to or otherwise interfere or disrupt other computer systems or networks
+                    connected to the Platform or Services.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iv.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Interfere
+                    with another’s utilization and enjoyment of the Site;</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Post,
+                    promote or transmit through the Website, Mobile Application any prohibited materials as deemed
+                    illegal by the Applicable Laws.</p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vi.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Use
+                    or upload, in any way, any software or material that contains, or which you have reason to suspect
+                    that contains, viruses, damaging components, malicious code or harmful components which may impair
+                    or corrupt the Website, Mobile Application’s data or damage or interfere with the operation of
+                    another Customer’s computer or mobile device or the Mobile Application and use the Mobile
+                    Application other than in conformance with the acceptable use policies of any connected computer
+                    networks, any applicable Internet standards and any other applicable laws.</p>
+                <p> </p>
+                <p> </p>
+                <p><strong>7. Pricing and Payment Terms: </strong></p>
+                <p><br></p>
+                <p>a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All prices are listed in Pakistani Rupees and are inclusive of GST
+                    and are listed on the Website and Mobile Application by our Third Party Providers that are selling
+                    the product or service. Items in your Shopping Cart will always reflect the most recent price
+                    displayed on the item's product detail page. Please note that this price may differ from the price
+                    shown for the item when you first placed it in your cart. Placing an item in your cart does not
+                    reserve the price shown at that time. It is also possible that an item's price may decrease between
+                    the time you place it in your basket and the time you purchase it.</p>
+                <p><br></p>
+                <p>b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;That any charges owed by you for the completion of deliveries and/or
+                    Services provided by the Company are final and non-refundable.&nbsp;The Company has no obligation to
+                    provide refunds and it is solely at their discretion if they choose to do so.&nbsp;</p>
+                <p><br></p>
+                <p>c)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are determined to provide the most accurate pricing information on
+                    the Website and/or Mobile Application to our users; however, errors may still occur, such as cases
+                    when the price of an item is not displayed correctly on the Site. As such, we reserve the right to
+                    refuse or cancel any order. In the event that an item is mispriced, we may, at our own discretion,
+                    either contact you for instructions or cancel your order and notify you of such cancellation. We
+                    shall have the right to refuse or cancel any such orders whether or not the order has been confirmed
+                    and your prepayment processed. If such a cancellation occurs on your prepaid order, our policies for
+                    refund will apply. </p>
+                <p><br></p>
+                <p>d)&nbsp;&nbsp;&nbsp;&nbsp;We list availability information for products listed on the Website and
+                    Mobile Application, including on each product information page. Beyond what we say on that page or
+                    otherwise on the Application, we cannot be more specific about availability or product details as
+                    that is the responsibility of our third party vendors. Please note that dispatch estimates are just
+                    that. They are not guaranteed dispatch times and should not be relied upon as such. As we process
+                    your order, you will be informed by e-mail or SMS if any products you order turn out to be
+                    unavailable.</p>
+                <p><br></p>
+                <p>e)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please note that there are cases when an order cannot be processed
+                    for various reasons. The Company reserves the right to refuse or cancel any order for any reason at
+                    any given time. You may be asked to provide additional verifications or information, including but
+                    not limited to phone number and address, before we accept the order.</p>
+                <p><br></p>
+                <p>f)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Each user is entitled to only open one account and have use of
+                    a Bellboy Wallet which is linked to either their credit and/or debit card to facilitate payment for
+                    any products and services offered on the Website and Mobile Application. That the User stipulates
+                    that their account will be linked to a working credit and/or debit card that is active and not
+                    expired. </p>
+                <p>&nbsp;</p>
+                <p>g)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Each user also has the option to also load money to their Bellboy
+                    Wallet through either JazzCash or Easy Paisa. </p>
+                <p><br></p>
+                <p>h)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In order to avoid any fraud with credit or debit cards, we reserve
+                    the right to obtain validation of your payment details before providing you with the product and to
+                    verify the personal information you shared with us. This verification can take the shape of an
+                    identity, place of residence, or banking information check. The absence of an answer following such
+                    an inquiry will automatically cause the cancellation of the order within a reasonable timeline. We
+                    reserve the right to proceed to direct cancellation of an order for which we suspect a risk of
+                    fraudulent use of banking instruments or other reasons without prior notice or any subsequent legal
+                    liability.</p>
+                <p><br></p>
+                <h2>8. &nbsp;Third-Party Interactions:</h2>
+                <p>a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Third-Party Websites,
+                        Applications and Advertisements.</strong>&nbsp;The Services may contain links to third-party
+                    websites (<strong><em>“Third-Party Websites”</em></strong>) and applications
+                    (<strong><em>“Third-Party Applications”</em></strong>) and advertisements (<strong><em>“Third-Party
+                            Advertisements”</em></strong>) (collectively, “Third-Party Websites &amp; Advertisements”).
+                    When you click on a link to a Third-Party Website, Third-Party Application or Third-Party
+                    Advertisement, the Company will not warn you that you have left the Company’s Website or Services
+                    and will not warn you that you are subject to the terms and conditions (including privacy policies)
+                    of another website or destination. Such Third-Party Websites &amp; Advertisements are not under the
+                    control of the Company. The Company is not responsible for any Third-Party Websites, Third-Party
+                    Applications or any Third-Party Advertisements. The Company provides these Third-Party Websites
+                    &amp; Advertisements only as a convenience and does not review, approve, monitor, endorse, warrant,
+                    or make any representations with respect to such Third-Party Websites &amp; Advertisements, or their
+                    products or services. You use all links in Third-Party Websites &amp; Advertisements at your own
+                    risk. You should review applicable terms and policies, including privacy and data gathering
+                    practices of any Third-Party Websites or Third-Party Applications, and make whatever investigation
+                    you feel necessary or appropriate before proceeding with any transaction with any third party.</p>
+                <p><br></p>
+                <p>b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>App Stores.</strong>&nbsp;You
+                    acknowledge and agree that the availability of the Application is dependent on the third party from
+                    which you received the Application license, e.g., the Apple iPhone or Android app stores
+                    (<strong><em>“App Store”</em></strong>). You acknowledge that this Agreement is between you and the
+                    Company and not with the App Store. The Company, not the App Store, is solely responsible for the
+                    Software and the Services, including the Application and the Services, the content thereof,
+                    maintenance, support services and warranty therefor, and addressing any claims relating thereto
+                    (e.g., product liability, legal compliance or intellectual property infringement). In order to use
+                    the Application, you must have access to a wireless network, and you agree to pay all fees
+                    associated with such access. You also agree to pay all fees (if any) charged by the App Store in
+                    connection with the Application or the Services. You agree to comply with, and your license to use
+                    the Application is conditioned upon your compliance with, all applicable third-party terms of
+                    agreement (e.g., the App Store’s terms and policies) when using the Application. You acknowledge
+                    that the App Store (and its subsidiaries) are intended third-party beneficiaries of the Agreement
+                    and have the right to enforce them.</p>
+                <p><br></p>
+                <h2>9.&nbsp;&nbsp;&nbsp;Indemnification:
+                </h2>
+                <p>a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You agree to indemnify and hold harmless the Company and its
+                    officers, directors, employees, agents and affiliates (each, an&nbsp;<strong><em>“Indemnified
+                            Party”</em></strong>), from and against any losses, claims, actions, costs, damages,
+                    penalties, fines and expenses, including without limitation attorneys’ fees and expenses, that may
+                    be incurred by an Indemnified Party arising out of, relating to or resulting from (a) your User
+                    Content; (b) your misuse of the Website, Software or Services; (c) your violation of this Agreement;
+                    or (d) your violation of any applicable laws, rules or regulations through or related to the use of
+                    the Website, Software or Services. In the event of any claim, allegation, suit or proceeding
+                    alleging any matter potentially covered by the agreements in this section, you agree to pay for the
+                    defense of the Indemnified Party, including reasonable costs and attorneys’ fees incurred by the
+                    Indemnified Party. The Company reserves the right, at its own cost, to assume the exclusive defense
+                    and control of any matter otherwise subject to indemnification by you, in which event you will fully
+                    cooperate with the Company in asserting any available defenses. This provision does not require you
+                    to indemnify any Indemnified Party for any unconscionable commercial practice by such party, or for
+                    such party’s negligence, fraud, deception, false promise, misrepresentation or concealment,
+                    suppression or omission of any material fact in connection with the Website, Software or Services.
+                    You agree that the provisions in this section will survive any termination of your account, this
+                    Agreement, or your access to the Website, Software and/or Services.</p>
+                <p><br></p>
+                <h2>10. &nbsp;Disclaimer of Warranties:</h2>
+                <p>YOU EXPRESSLY UNDERSTAND AND AGREE THAT TO THE FULLEST EXTENT OF LAW, YOUR USE OF THE MOBILE
+                    APPLICATION, SOFTWARE AND SERVICES IS ENTIRELY AT YOUR OWN RISK. CHANGES ARE PERIODICALLY MADE TO
+                    THE MOBILE APPLICATION, SOFTWARE AND SERVICES AND MAY BE MADE AT ANY TIME WITHOUT NOTICE TO YOU. THE
+                    MOBILE APPLICATION, SOFTWARE AND SERVICES ARE PROVIDED ON AN “AS IS” BASIS WITHOUT WARRANTIES OF ANY
+                    KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY,
+                    FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. THE COMPANY MAKES NO WARRANTIES OR
+                    REPRESENTATIONS ABOUT THE ACCURACY, RELIABILITY, COMPLETENESS OR TIMELINESS OF THE CONTENT MADE
+                    AVAILABLE THROUGH THE MOBILE APPLICATION, SOFTWARE OR SERVICES, OR THE SERVICES, SOFTWARE, TEXT,
+                    GRAPHICS OR LINKS.</p>
+                <p>THE COMPANY DOES NOT WARRANT THAT THE MOBILE APPLICATION, SOFTWARE OR SERVICES WILL OPERATE
+                    ERROR-FREE OR THAT THE MOBILE APPLICATION, SOFTWARE OR SERVICES ARE FREE OF COMPUTER VIRUSES AND
+                    OTHER HARMFUL MALWARE. IF YOUR USE OF THE MOBILE APPLICATION, SOFTWARE OR SERVICES RESULTS IN THE
+                    NEED FOR SERVICING OR REPLACING EQUIPMENT OR DATA, THE COMPANY SHALL NOT BE RESPONSIBLE FOR THOSE
+                    ECONOMIC COSTS.</p>
+                <h2>11. Internet Delays:</h2>
+                <p>The Company’s Website, Mobile Application, Software and Services may be subject to limitations,
+                    delays, and other problems inherent in the use of the Internet and electronic communications. Except
+                    as set forth in the Company’s privacy policy or as otherwise required by applicable law, the Company
+                    is not responsible for any delays, delivery failures, or other economic damage resulting from such
+                    problems.</p>
+                <h2>12. Limitation of Liability</h2>
+                <p>(a)&nbsp;<strong>Cap on Liability.</strong>&nbsp;TO THE FULLEST EXTENT OF LAW THE COMPANY’S AGGREGATE
+                    LIABILITY SHALL NOT EXCEED THE GREATER OF (a) AMOUNTS ACTUALLY PAID BY AND/OR DUE FROM YOU TO THE
+                    COMPANY IN THE SIX (6) MONTH PERIOD IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO SUCH CLAIM, AND
+                    (b) THE REMEDY OR PENALTY IMPOSED BY THE STATUTE UNDER WHICH SUCH CLAIM ARISES. THE FOREGOING CAP ON
+                    LIABILITY SHALL NOT APPLY TO LIABILITY OF THE COMPANY FOR (a) DEATH OR PERSONAL INJURY CAUSED BY THE
+                    COMPANY’S NEGLIGENCE OR WILLFUL MISCONDUCT, OR FOR (b) ANY INJURY CAUSED BY THE COMPANY’S FRAUD OR
+                    FRAUDULENT MISREPRESENTATION.</p>
+                <p><br></p>
+                <p>(b)&nbsp;<strong>Disclaimer of Certain Damages.</strong>&nbsp;TO THE FULLEST EXTENT OF LAW THE
+                    COMPANY SHALL NOT BE LIABLE TO ANYONE FOR ANY INDIRECT, PUNITIVE, SPECIAL, EXEMPLARY, INCIDENTAL,
+                    CONSEQUENTIAL OR OTHER DAMAGES OF ANY TYPE OR KIND (INCLUDING PERSONAL INJURY, TRAFFIC VIOLATIONS,
+                    LOSS OF DATA, REVENUE, PROFITS, USE OR OTHER ECONOMIC ADVANTAGE). THE COMPANY SHALL NOT BE LIABLE
+                    FOR ANY LOSS, DAMAGE OR INJURY WHICH MAY BE INCURRED BY YOU, INCLUDING BUT NOT LIMITED TO LOSS,
+                    DAMAGE OR INJURY ARISING OUT OF, OR IN ANY WAY CONNECTED WITH THE WEBSITE, SOFTWARE, OR SERVICES
+                    INCLUDING BUT NOT LIMITED TO THE USE OR INABILITY TO USE THE MOBILE APPLICATION, SOFTWARE, OR
+                    SERVICES, ANY RELIANCE PLACED BY YOU ON THE COMPLETENESS, ACCURACY OR EXISTENCE OF ANY ADVERTISING,
+                    OR AS A RESULT OF ANY RELATIONSHIP OR TRANSACTION BETWEEN YOU AND ANY FOOD SERVICE AND/OR GROCERY
+                    STORE SERVICE PROVIDER, BELLBOY, ADVERTISER OR SPONSOR WHOSE ADVERTISING APPEARS ON THE WEBSITE OR
+                    IS REFERRED BY THE SOFTWARE OR SERVICES, EVEN IF THE COMPANY AND/OR ITS LICENSORS HAVE BEEN
+                    PREVIOUSLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.&nbsp;</p>
+                <h4>&nbsp;</h4>
+                <h4><strong>13.&nbsp;PERSONAL DATA PROTECTION</strong></h4>
+                <p>You agree and consent to the Company using and processing your Personal Data for the Purposes and in
+                    the manner as identified hereunder.</p>
+                <p>For the purposes of this Agreement, “Personal Data” means information about you, from which you are
+                    identifiable, including but not limited to your name, identification card number, passport number,
+                    nationality, address, telephone number, credit or debit card details, race, gender, date of birth,
+                    email address, any information about you which you have provided to the Company in registration
+                    forms, application forms or any other similar forms and/or any information about you that has been
+                    or may be collected, stored, used and processed by the Company from time to time and includes
+                    sensitive personal data such as data relating to health, religious or other similar beliefs.</p>
+                <p>The provision of your Personal Data is voluntary. However, if you do not provide the Company your
+                    Personal Data, your request for the Application may be incomplete and the Company will not be able
+                    to process your Personal Data for the Purposes outlined below and may cause the Company to be unable
+                    to allow you to use the Service.</p>
+                <p>The Company may use and process your Personal Data for business and activities of the Company which
+                    shall include, without limitation the following (“the Purpose”):</p>
+                <ol>
+                    <li>To perform the Company’s obligations in respect of any contract entered into with you;</li>
+                    <li>To provide you with any services pursuant to the Terms and Conditions herein;</li>
+                    <li>To process your participation in any events, promotions, activities, focus groups, research
+                        studies, contests, promotions, polls, surveys or any productions and to communicate with you
+                        regarding your attendance thereto;</li>
+                    <li>Process, manage or verify your application for the Service pursuant to the Terms and Conditions
+                        herein;</li>
+                    <li>To validate and/or process payments pursuant to the Terms and Conditions herein;</li>
+                    <li>To develop, enhance and provide what is required pursuant to the Terms and Conditions herein to
+                        meet your needs;</li>
+                    <li>To process any refunds, rebates and/or charges pursuant to the Terms and Conditions herein;</li>
+                    <li>To facilitate or enable any checks as may be required pursuant to the Terms and Conditions
+                        herein;</li>
+                    <li>To respond to questions, comments and feedback from you;</li>
+                    <li>To communicate with you for any of the purposes listed herein;</li>
+                    <li>For internal administrative purposes, such as auditing, data analysis, database records;</li>
+                    <li>For purposes of detection, prevention and prosecution of crime;</li>
+                    <li>For the Company to comply with its obligations under law;</li>
+                    <li>To send you alerts, newsletters, updates, mailers, promotional materials, special privileges,
+                        festive greetings from the Company, its partners, advertisers and/or sponsors;</li>
+                    <li>To notify and invite you to events or activities organised by the Company, its partners,
+                        advertisers, and/or sponsors;</li>
+                    <li>To share your Personal Data amongst the companies within the Company’s group of companies
+                        comprising the subsidiaries, associate companies and/or jointly controlled entities of the
+                        holding company of the group (“the Group”) and with the Company’s and Group’s agents, third
+                        party providers, developers, advertisers, partners, event companies or sponsors who may
+                        communicate with you for any reasons whatsoever.</li>
+                </ol>
+                <p>If you do not consent to the Company processing your Personal Data for any of the Purposes, please
+                    notify the Company using the support contact details as provided in the Application.</p>
+                <p>If any of the Personal Data that you have provided to us changes, for example, if you change your e-
+                    mail address, telephone number, payment details or if you wish to cancel your account, please update
+                    your details by sending your request to the support contact details as provided in the Application.
+                    The Company will, to the best of our abilities, effect such changes as requested within fourteen
+                    (14) working days of receipt of such notice of change.</p>
+                <p>By submitting your information, you consent to the use of that information as set out in the form of
+                    submission and in this Agreement.</p>
+                <h4><strong>14.&nbsp;DISCLAIMER OF WARRANTIES</strong></h4>
+                <p>THE COMPANY MAKES NO REPRESENTATION, WARRANTY, OR GUARANTEE AS TO THE RELIABILITY, TIMELINESS,
+                    QUALITY, SUITABILITY, AVAILABILITY, ACCURACY OR COMPLETENESS OF THE SERVICES OR GOODS, APPLICATION
+                    AND/OR THE SOFTWARE. THE COMPANY DOES NOT REPRESENT OR WARRANT THAT (A) THE USE OF THE WEBSITE,
+                    SERVICE, APPLICATION AND/OR THE SOFTWARE WILL BE SECURE, TIMELY, UNINTERRUPTED OR ERROR-FREE OR
+                    OPERATE IN COMBINATION WITH ANY OTHER HARDWARE, SOFTWARE, SYSTEM OR DATA, (B) THE SERVICE WILL MEET
+                    YOUR REQUIREMENTS OR EXPECTATIONS, (C) ANY STORED DATA WILL BE ACCURATE OR RELIABLE, (D) THE QUALITY
+                    OF ANY PRODUCTS, SERVICES, INFORMATION, OR OTHER MATERIALS PURCHASED OR OBTAINED BY YOU THROUGH THE
+                    APPLICATION WILL MEET YOUR REQUIREMENTS OR EXPECTATIONS, (E) ERRORS OR DEFECTS IN THE APPLICATION
+                    AND/OR THE SOFTWARE WILL BE CORRECTED, OR (F) THE APPLICATION OR THE SERVER(S) THAT MAKE THE
+                    APPLICATION AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS, OR (G) THE APPLICATION AND/OR
+                    THE SOFTWARE TRACKS YOU OR THE VEHICLE USED BY THE TRANSPORTATION PROVIDER. THE SERVICE IS PROVIDED
+                    TO YOU STRICTLY ON AN “AS IS” BASIS. ALL CONDITIONS, REPRESENTATIONS AND WARRANTIES, WHETHER
+                    EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, INCLUDING, WITHOUT LIMITATION, ANY IMPLIED WARRANTY OF
+                    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT OF THIRD PARTY RIGHTS, ARE
+                    HEREBY EXCLUDED AND DISCLAIMED TO THE HIGHEST AND MAXIMUM EXTENT.</p>
+                <p>THE COMPANY MAKES NO REPRESENTATION, WARRANTY, OR GUARANTEE AS TO THE RELIABILITY, SAFETY,
+                    TIMELINESS, QUALITY, SUITABILITY OR AVAILABILITY OF ANY GOODS, PRODUCTS AND SERVICES, INCLUDING BUT
+                    NOT LIMITED TO THE TRANSPORTATION SERVICES PROVIDED TO CUSTOMERS OR PASSENGERS THROUGH THE USE OF
+                    THE SERVICE, APPLICATION AND/OR THE SOFTWARE. YOU ACKNOWLEDGE AND AGREE THAT THE ENTIRE RISK ARISING
+                    OUT OF SUCH USE OF THE SERVICES REMAINS SOLELY AND ABSOLUTELY WITH YOU AND YOU SHALL HAVE NO
+                    RECOURSE WHATSOEVER AGAINST THE COMPANY.</p>
+                <h2>15. Dispute Resolution</h2>
+                <p><strong>PLEASE READ THE FOLLOWING SECTION CAREFULLY. IT REQUIRES YOU TO ARBITRATE DISPUTES WITH THE
+                        COMPANY AND LIMITS THE MANNER IN WHICH YOU CAN SEEK RELIEF. THIS SECTION 12 OF THIS AGREEMENT
+                        SHALL BE REFERRED TO AS THE “ARBITRATION AGREEMENT”.</strong></p>
+                <p>1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(a)&nbsp;<strong>Scope of Arbitration Agreement.</strong>&nbsp;You
+                    agree that any dispute or claim relating in any way to your access or use of the Services as a
+                    consumer of our Services, to any advertising or marketing communications regarding the Company or
+                    the Services, to any products or services sold or distributed through the Services that you received
+                    as a consumer of our Services, or to any aspect of your relationship or transactions with Company as
+                    a consumer of our Services including but not limited to use of your personal data information will
+                    be resolved by binding arbitration, rather than in court, except that (1) you may assert claims in
+                    small claims court if your claims qualify, so long as the matter remains in such court and advances
+                    only on an individual (non-class, non-representative) basis; and (2) you or the Company may seek
+                    equitable relief in court for infringement or other misuse of intellectual property rights (such as
+                    trademarks, trade dress, domain names, trade secrets, copyrights, and patents). This Arbitration
+                    Agreement shall apply, without limitation, to all claims that arose or were asserted before the
+                    Effective Date of this Agreement.</p>
+                <p><strong>CASES HAVE BEEN FILED AGAINST THE COMPANY—AND OTHERS MAY BE FILED IN THE FUTURE—THAT ATTEMPT
+                        TO ASSERT CLASS ACTION CLAIMS, AND BY ACCEPTING THIS ARBITRATION AGREEMENT YOU ELECT NOT TO
+                        PARTICIPATE IN SUCH CASES.</strong></p>
+                <p><strong>IF YOU AGREE TO ARBITRATION WITH THE COMPANY, YOU ARE AGREEING IN ADVANCE THAT YOU WILL NOT
+                        PARTICIPATE IN OR SEEK TO RECOVER MONETARY OR OTHER RELIEF IN ANY SUCH CLASS, COLLECTIVE, AND/OR
+                        REPRESENTATIVE LAWSUIT. INSTEAD, BY AGREEING TO ARBITRATION, YOU MAY BRING YOUR CLAIMS AGAINST
+                        THE COMPANY IN AN INDIVIDUAL ARBITRATION PROCEEDING. IF SUCCESSFUL ON SUCH CLAIMS, YOU COULD BE
+                        AWARDED MONEY OR OTHER RELIEF BY AN ARBITRATOR.</strong></p>
+                <p>2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b)&nbsp;<strong>Arbitration Rules and Forum.</strong>&nbsp;This
+                    Arbitration Agreement is governed by the Arbitration Act 1940 in all respects. To begin an
+                    arbitration proceeding, you must send a letter requesting arbitration and describing your claim to
+                    the Company at _________________________. The arbitration will be conducted by an independent
+                    arbitrator mutually agreed on by both parties under its rules and pursuant to the terms of this
+                    Agreement. Disputes involving claims and counterclaims under PKR ____________, not inclusive of
+                    attorneys’ fees and interest. You may choose to have the arbitration conducted by telephone, video
+                    conference, based on written submissions, or in person in the country where you live or at another
+                    mutually agreed location.</p>
+                <p>3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c)&nbsp;<strong>Arbitrator Powers.</strong>&nbsp;The arbitrator
+                    shall have exclusive authority to resolve any dispute relating to the interpretation, applicability,
+                    enforceability or formation of this Arbitration Agreement including, but not limited to any claim
+                    that all or any part of this Arbitration Agreement is void or voidable. The arbitration will decide
+                    the rights and liabilities, if any, of you and the Company. The arbitration proceeding will not be
+                    consolidated with any other matters or joined with any other proceedings or parties. The arbitrator
+                    will have the authority to grant motions dispositive of all or part of any claim or dispute. The
+                    arbitrator will have the authority to award monetary damages and to grant any non-monetary remedy or
+                    relief available to an individual under applicable law, the arbitral forum’s rules, and this
+                    Agreement (including this Arbitration Agreement). The arbitrator will issue a written statement of
+                    decision describing the essential findings and conclusions on which any award (or decision not to
+                    render an award) is based, including the calculation of any damages awarded. The arbitrator shall
+                    follow the applicable law. The arbitrator has the same authority to award relief on an individual
+                    basis that a judge in a court of law would have. The arbitrator’s decision is final and binding on
+                    you and the Company.</p>
+                <p>(d)&nbsp;<strong>Waiver of Jury Trial.</strong>&nbsp;YOU AND THE COMPANY WAIVE ANY CONSTITUTIONAL AND
+                    STATUTORY RIGHTS TO SUE IN COURT AND RECEIVE A JUDGE OR JURY TRIAL. You and the Company are instead
+                    electing to have claims and disputes resolved by arbitration, except as specified in section 12(a)
+                    above. There is no judge or jury in arbitration, and court review of an arbitration award is
+                    limited.</p>
+                <p>(e)&nbsp;<strong>Waiver of Class or Consolidated Actions.</strong>&nbsp;YOU AND THE COMPANY AGREE TO
+                    WAIVE ANY RIGHT TO RESOLVE CLAIMS WITHIN THE SCOPE OF THIS ARBITRATION AGREEMENT ON A CLASS,
+                    COLLECTIVE, OR REPRESENTATIVE BASIS. ALL CLAIMS AND DISPUTES WITHIN THE SCOPE OF THIS ARBITRATION
+                    AGREEMENT MUST BE ARBITRATED ON AN INDIVIDUAL BASIS AND NOT ON A CLASS BASIS. CLAIMS OF MORE THAN
+                    ONE CUSTOMER OR USER CANNOT BE ARBITRATED OR LITIGATED JOINTLY OR CONSOLIDATED WITH THOSE OF ANY
+                    OTHER CUSTOMER OR USER. If, however, this waiver of class or consolidated actions is deemed invalid
+                    or unenforceable with respect to a particular claim or dispute, neither you nor the Company is
+                    entitled to arbitration of such claim or dispute. Instead, all such claims and disputes will then be
+                    resolved in a court as set forth in Section 13.</p>
+                <p>(f)&nbsp;<strong>Opt Out.</strong>&nbsp;You may opt out of this Arbitration Agreement. If you do so,
+                    neither you nor the Company can force the other to arbitrate as a result of this Agreement. To opt
+                    out, you must notify the Company in writing no later than 30 days after first becoming subject to
+                    this Arbitration Agreement. Your notice must include your name and address, your Bellboy username
+                    (if any), the email address you used to set up your Bellboy account (if you have one), and a CLEAR
+                    statement that you want to opt out of this Arbitration Agreement. You must send your opt-out notice
+                    to:&nbsp;_________________. If you opt out of this Arbitration Agreement, all other parts of this
+                    Agreement will continue to apply to you. Opting out of this Arbitration Agreement has no effect on
+                    any other arbitration agreements that you may have entered into with us or may enter into in the
+                    future with us. NOTWITHSTANDING ANYTHING TO THE CONTARY HEREIN, NOTHING IN THIS AGREEMENT SHALL
+                    SUPERSEDE, AMEND, OR MODIFY THE TERMS OF ANY SEPARATE AGREEMENT(S) BETWEEN YOU AND THE COMPANY
+                    RELATING TO YOUR WORK AS AN EMPLOYEE OR INDEPENDENT CONTRACTOR, INCLUDING WITHOUT LIMITATION, ANY
+                    INDEPENDENT CONTRACTOR AGREEMENT GOVERNING YOUR SERVICES AS A BELLBOY. FOR THE AVOIDANCE OF DOUBT,
+                    IF YOU ARE A BELLBOY, OPTING-OUT OF THE ARBITIRATION AGREEMENT SET FORTH IN THIS SECTION 12 HAS NO
+                    AFFECT ON YOUR AGREEMENT TO ARBITRATE DISPUTES COVERED BY YOUR INDEPEDENT CONTRACTOR AGREEMENT WITH
+                    THE COMPANY.</p>
+                <p>(g)&nbsp;<strong>Survival.</strong>&nbsp;This Arbitration Agreement will survive any termination of
+                    your relationship with the Company.</p>
+                <p>(h)&nbsp;<strong>Modification.</strong>&nbsp;Notwithstanding any provision in the Agreement to the
+                    contrary, we agree that if the Company makes any future material change to this Arbitration
+                    Agreement, it will not apply to any individual claim(s) that you had already provided notice of to
+                    the Company.</p>
+                <p><br></p>
+                <h2>15. Exclusive Venue</h2>
+                <p>To the extent the parties are permitted under this Agreement to initiate litigation in a court, both
+                    you and the Company agree that all claims and disputes arising out of or relating to the Agreement
+                    will be litigated exclusively in the Islamic Republic of Pakistan.</p>
+                <h2>16. Termination</h2>
+                <p>At its sole discretion, the Company may modify or discontinue the Website, Mobile Application,
+                    Software or Service, or may modify, suspend or terminate your access to the Website, Mobile
+                    Application, Software or the Services, for any reason, with or without notice to you and without
+                    liability to you or any third party. In addition to suspending or terminating your access to the
+                    Website, Mobile Application, Software or the Service, the Company reserves the right to take
+                    appropriate legal action, including without limitation pursuing civil, criminal or injunctive
+                    redress. Even after your right to use the Website, Mobile Application, Software or the Services is
+                    terminated, this Agreement will remain enforceable against you. All provisions which by their nature
+                    should survive to give effect to those provisions shall survive the termination of this Agreement.
+                </p>
+                <h2>17. Procedure for Making Claims of Copyright Infringement.</h2>
+                <p>It is the Company’s policy to terminate membership privileges of any User who repeatedly infringes
+                    copyright upon prompt notification to the Company by the copyright owner or the copyright owner’s
+                    legal agent. Without limiting the foregoing, if you believe that your work has been copied and
+                    posted on the Application or the Services in a way that constitutes copyright infringement, please
+                    provide the Company with the following information: (a) an electronic or physical signature of the
+                    person authorized to act on behalf of the owner of the copyright interest; (b) a description of the
+                    copyrighted work that you claim has been infringed; (c) a description of the location on the Mobile
+                    Application or in the Services of the material that you claim is infringing; (d) your address,
+                    telephone number and e-mail address; (e) a written statement by you that you have a good faith
+                    belief that the disputed use is not authorized by the copyright owner, its agent or the law; and (f)
+                    a statement by you, made under penalty of perjury, that the above information in your notice is
+                    accurate and that you are the copyright owner or authorized to act on the copyright owner’s behalf.
+                    Contact information for the Company for notice of claims of copyright infringement is as follows:
+                    ___________________________</p>
+                <h2>18. General</h2>
+                <p>(a)&nbsp;<strong>No Joint Venture or Partnership.</strong>&nbsp;No joint venture, partnership,
+                    employment, or agency relationship exists between you, the Company or any third party provider as a
+                    result of this Agreement or use of the Software or Services.</p>
+                <p>(b)&nbsp;<strong>Choice of Law.</strong>&nbsp;This Agreement is governed by the laws of the Islamic
+                    Republic of Pakistan, without giving effect to any principles that provide for the application of
+                    the law of any other jurisdiction.</p>
+                <p>(c)&nbsp;<strong>Severability.</strong>&nbsp;Except as otherwise provided herein, if any provision of
+                    this Agreement is found to be invalid, the invalidity of such provision shall not affect the
+                    validity of the remaining provisions of this Agreement, which shall remain in full force and effect.
+                </p>
+                <p>(d) <strong>Notice.</strong>&nbsp;Where the Company requires that you provide an e-mail address, you
+                    are responsible for providing the Company with your most current e-mail address. In the event that
+                    the last e-mail address you provided to the Company is not valid, or for any reason is not capable
+                    of delivering to you any notices required or permitted by this Agreement, the Company’s dispatch of
+                    the e-mail containing such notice will nonetheless constitute effective notice. You may give notice
+                    to the Company by visiting:&nbsp;___________________. Such notice shall be deemed given on the next
+                    business day after such notice is actually received by the Company.</p>
+                <p>(e) <strong>Electronic Communications.</strong>&nbsp;For contractual purposes, you (1) consent to
+                    receive communications from the Company in an electronic form; and (2) agrees that all terms and
+                    conditions, agreements, notices, disclosures, and other communications that the Company provides to
+                    you electronically satisfy any legal requirement that such communications would satisfy if they were
+                    in writing. This subparagraph does not affect your statutory rights.</p>
+                <p>(f) <strong>Force Majeure.</strong>&nbsp;The Company will not be held responsible for any delay or
+                    failure to comply with our obligations under these conditions if the failure and/or delay arises
+                    from an Act of God and/or any cause which is beyond our reasonable control.&nbsp;</p>
+                <p>(g) <strong>Entire Agreement.</strong>&nbsp;This Agreement is the final, complete and exclusive
+                    agreement of the parties with respect to the subject matter hereof and supersedes and merges all
+                    prior discussions between the parties with respect to such subject matter. </p>
+                <h2><br></h2>
+                <h2>19. Contact Information</h2>
+                <p>The Company welcomes your questions or comments regarding the Terms:</p>
+                <p><strong><em>Bellboy Technology Pvt Limited </em></strong></p>
+                <p> </p>
+                <p> </p>
+
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center py-2">
+                <div data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500" data-aos-offset="0"
+                    class="col-12 contact-number-bg">
+                    <div class="contact-number">
+                        <div class="">
+                            <h5>Call us to hire a bellboy</h5>
+                            <h2>+92 304 111 2355</h2>
+                            <h5>info@bellboy.pk</h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="about" class="col-10 text-center content-logo-text offset">
+                    <img src="./img/header/logo.svg" class="mb-4" width="160" alt="">
+                    <p class="text-white para">
+                        Bellboy has been created to develop opportunities for job seekers affected by corona or other
+                        reasons, taking care of delivery or any specific task for household or any other customer
+                        requirements. Our platform provides personal assistance and delivery
+                        services for all your needs, while you stay at home with peace of mind our bellboys will take
+                        care of the rest following safety SOPs in these challenging times.
+                    </p>
+                    <div class="footer-icons">
+                        <a href="https://twitter.com/bellboyco/" target="_blank" rel="noreferrer">
+                            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.facebook.com/bellboyco/" target="_blank" rel="noreferrer">
+                            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/bellboy_co/" target="_blank" rel="noreferrer">
+                            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/bellboyco/" target="_blank" rel="noreferrer">
+                            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                        </a>
+                        <!-- <a href="#" target="_blank">
+                            <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
+                        </a> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="text-center p-2">
+            <p class="text-white para">
+                All right reserved 2020 - <span class="text-yellow">Bellboy Technology Pvt. Ltd.</span>
+                &nbsp;&nbsp;
+                <a href="./privacy-policy.html" class="text-white">Privacy-Policy</a>
+                &nbsp;&nbsp;
+                <a href="./termandconditions.html" class="text-white">term and condition</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+    <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

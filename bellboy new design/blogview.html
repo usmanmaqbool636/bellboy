@@ -25,25 +25,28 @@
         crossorigin="anonymous"></script>
     <title>bellboy</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
-    <header class="container-fluid  p-0" style="background-size: cover;">
+
+
+    
+    <header class="container-fluid  p-0">
         <!-- NavBar -->
         <nav class="navbar navbar-expand-lg  bg-transparent navbar-light bg-light">
             <a class="navbar-brand" href="/"><img src="./img/header/logo.svg" width="160" alt="Logo"></a>
-            <button class="navbar-toggler bg-yellow" type="button" data-toggle="collapse" data-target="#navbarNav"
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto float-right">
-                    <li class="nav-item ">
+                    <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#services">Services</a>
+                        <a class="nav-link" href="./index.html#services">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-active" href="./blog.html">Blog</a>
@@ -63,7 +66,98 @@
 
 
 
+        <div class="container-fluid slideshow-container">
+
+            <div class="mySlides">
+                <div class="row  header-content-container ">
+                    <div class=" header-content">
+                        <h1 class="fade1">Hire a Bellboy</h1>
+                        <p class="">As your personal assistant</p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="row  header-content-container ">
+                    <div class=" header-content">
+                        <h1>We Deliver </h1>
+                        <p class="fade1"> Groceries </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="row  header-content-container ">
+                    <div class=" header-content">
+                        <h1>We Deliver </h1>
+                        <p class="fade1"> Medicines</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="mySlides">
+                <div class="row  header-content-container ">
+                    <div class=" header-content">
+                        <h1>We Deliver </h1>
+                        <p class="fade1">Food</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="row  header-content-container ">
+                    <div class=" header-content">
+                        <h1>We Deliver </h1>
+                        <p class="fade1"> Fruits & Vegetables </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active1", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+            }
+            setInterval(() => {
+                showSlides(slideIndex += 1)
+            }, 2000);
+        </script>
+
+
     </header>
+    
 
     <!-- Become A bellboy  from modal-->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
@@ -108,10 +202,33 @@
 
     <main class="container-fluid p-0 m-0">
 
-        <section class="container my-5">
-            <div id="blog-id">
+        <section class="container blog-container my-5">
 
+            <div class="row">
+                <div class="col-xl-8 pt-5 order-1 order-lg-0">
+                    <div id="blog-id">
+
+                    </div>
+                </div>
+                <div class="col-xl-4 mt-5 pt-5 order-lg-1 order-0">
+
+                    <div class="blog-aside search">
+                        <h3>Search</h3>
+                        <div class="form-group has-search">
+                            <span class="fa fa-search form-control-feedback text-yellow"></span>
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <!-- <input type="text" placeholder="Search here" /> -->
+                    </div>
+                    <div class="blog-aside categories">
+                        <h3>Categories</h3>
+                        <ul id="categories">
+                        </ul>
+                    </div>
+
+                </div>
             </div>
+
         </section>
 
         <section class="newsletter">
@@ -193,6 +310,10 @@
         <div class="text-center p-2">
             <p class="text-white para">
                 All right reserved 2020 - <span class="text-yellow">Bellboy Technology Pvt. Ltd.</span>
+                &nbsp;&nbsp;
+                <a href="./privacy-policy.html" class="text-white">Privacy-Policy</a>
+                &nbsp;&nbsp;
+                <a href="./termandconditions.html" class="text-white">term and condition</a>
             </p>
         </div>
     </footer>
@@ -202,7 +323,9 @@
     <!-- Optional JavaScript -->
     <script>
         var urlParams = new URLSearchParams(location.search);
-        const blogId = urlParams.get('id')
+        const blogId = urlParams.get('id');
+        const CategoriesList = document.getElementById("categories");
+
         const root = "https://bellboyadmin.herokuapp.com"
         // const root = "http://localhost:5000";
         const renderCategories = (blog) => {
@@ -247,7 +370,7 @@
                     </div>
                 </div>
             `
-            renderCategories(blogdata);
+                    renderCategories(blogdata);
                 }
                 else {
                     noBlog()
@@ -267,6 +390,18 @@
                 `
         }
 
+        const fetchCategories = async () => {
+            try {
+                const categories = await axios.get(`${root}/api/categories`);
+                categories.data.forEach(cat => {
+                    CategoriesList.innerHTML += `<li>${cat.name}</li>`
+                })
+            } catch (error) {
+                console.log(error);
+            }
+        }
+
+        fetchCategories()
 
 
         renderBlog();
