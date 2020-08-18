@@ -104,7 +104,10 @@
         font-size: 1.5em !important;
     }
     .blog{
-        flex-direction: column !important;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+            -ms-flex-direction: column !important;
+                flex-direction: column !important;
     }
     .blog .img-contaier{
         height: auto !important;
@@ -112,7 +115,10 @@
         margin:0 0 1rem 0;
     }
     .iconList{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 }
 
@@ -148,11 +154,17 @@
         font-size: 1em !important;
     }
     .blog{
-        flex-direction: column !important;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+            -ms-flex-direction: column !important;
+                flex-direction: column !important;
     }
   
     .iconList{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     
 }
@@ -236,7 +248,10 @@
         margin-top: -1rem;
     }
     .blog{
-        flex-direction: column !important;
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+            -ms-flex-direction: column !important;
+                flex-direction: column !important;
     }
     .blog .img-contaier{
         height: auto !important;
@@ -244,7 +259,10 @@
         margin:0 0 1rem 0;
     }
     .iconList{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
   
 }

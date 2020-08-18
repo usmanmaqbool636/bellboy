@@ -1,5 +1,6 @@
 * {
-    box-sizing: border-box
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box
 }
 
 body {
@@ -34,8 +35,19 @@ img {
 /* On hover, add a black background color with a little bit see-through */
 
 .fade1 {
-    animation-name: fade1;
-    animation-duration: 1s;
+    -webkit-animation-name: fade1;
+            animation-name: fade1;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fade {
