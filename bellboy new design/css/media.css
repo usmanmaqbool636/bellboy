@@ -1,6 +1,9 @@
 /* // Small devices (landscape phones, 576px and up) */
 
 @media (max-width: 575.98px) {
+    .header-content h1{
+        margin-left: -2.5px !important;
+    }
     .para {
         font-size: .66rem !important;
     }
@@ -12,6 +15,10 @@
     .stayhome-content p {
         font-size: 4vw !important;
     }
+    .header-content p {
+        font-size: .55rem !important;
+    }
+
 
     .stayhome-content h5 {
         font-size: 2vw !important;
@@ -123,6 +130,9 @@
 }
 
 @media (max-width: 400.98px) {
+    .header-content h1{
+        margin-left: -2px !important;
+    }
     .navbar-brand img {
         width      : 18vw !important;
         margin-left: -7vw !important;
@@ -130,7 +140,7 @@
     }
 
     .header-content p {
-        font-size: 3vw !important;
+        font-size: .45rem !important;
     }
 
     .apps>div {
@@ -170,6 +180,12 @@
 }
 
 @media (min-width: 576px) {
+    .header-content h1{
+        margin-left: -3px !important;
+    }
+    .header-content p {
+        font-size: .7rem !important;
+    }
     .para {
         font-size: 1rem !important;
     }
@@ -271,6 +287,12 @@
 /* // Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
+    .header-content h1{
+        margin-left: -4px !important;
+    }
+    .header-content p {
+        font-size: .9rem !important;
+    }
     .navbar-brand img {
         width      : 160px;
         margin-left: 0;
@@ -324,6 +346,12 @@
 /* // Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
+    .header-content h1{
+        margin-left: -4.8px !important;
+    }
+    .header-content p {
+        font-size: 1rem !important;
+    }
     .service-item {
         max-width: 200px !important;
     }
@@ -363,6 +391,12 @@
 /* // Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
+    .header-content h1{
+        margin-left: -7px !important;
+    }
+    .header-content p {
+        font-size: 1.3rem !important;
+    }
     .service-item {
         max-width: 230px !important;
     }

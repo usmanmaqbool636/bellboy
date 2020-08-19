@@ -131,6 +131,7 @@ header {
 .header-content h1 {
     font-size: 7vw;
     margin-top: -16vw;
+    margin-left: -4.5px;
 }
 
 .header-content p {
