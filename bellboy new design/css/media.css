@@ -1,9 +1,21 @@
 /* // Small devices (landscape phones, 576px and up) */
 
 @media (max-width: 575.98px) {
-    .header-content h1{
+    .header-content h1 {
         margin-left: -2.5px !important;
     }
+
+    .services-section {
+        margin: 5rem 1rem !important;
+    }
+
+
+    /* .service-item img {
+        height       : 122px !important;
+        width        : 150px !important;
+        margin-bottom: 0 !important;
+    } */
+
     .para {
         font-size: .66rem !important;
     }
@@ -15,6 +27,7 @@
     .stayhome-content p {
         font-size: 4vw !important;
     }
+
     .header-content p {
         font-size: .55rem !important;
     }
@@ -110,29 +123,33 @@
     .footer-icons i {
         font-size: 1.5em !important;
     }
-    .blog{
-        -webkit-box-orient: vertical !important;
+
+    .blog {
+        -webkit-box-orient   : vertical !important;
         -webkit-box-direction: normal !important;
-            -ms-flex-direction: column !important;
-                flex-direction: column !important;
+        -ms-flex-direction   : column !important;
+        flex-direction       : column !important;
     }
-    .blog .img-contaier{
+
+    .blog .img-contaier {
         height: auto !important;
-        width: 100% !important;
-        margin:0 0 1rem 0;
+        width : 100% !important;
+        margin: 0 0 1rem 0;
     }
-    .iconList{
-        -webkit-box-orient: vertical;
+
+    .iconList {
+        -webkit-box-orient   : vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction   : column;
+        flex-direction       : column;
     }
 }
 
 @media (max-width: 400.98px) {
-    .header-content h1{
+    .header-content h1 {
         margin-left: -2px !important;
     }
+
     .navbar-brand img {
         width      : 18vw !important;
         margin-left: -7vw !important;
@@ -163,29 +180,42 @@
     .footer-icons i {
         font-size: 1em !important;
     }
-    .blog{
-        -webkit-box-orient: vertical !important;
+
+    .blog {
+        -webkit-box-orient   : vertical !important;
         -webkit-box-direction: normal !important;
-            -ms-flex-direction: column !important;
-                flex-direction: column !important;
+        -ms-flex-direction   : column !important;
+        flex-direction       : column !important;
     }
-  
-    .iconList{
-        -webkit-box-orient: vertical;
+
+    .iconList {
+        -webkit-box-orient   : vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction   : column;
+        flex-direction       : column;
     }
-    
+
+
 }
 
 @media (min-width: 576px) {
-    .header-content h1{
+    .header-content h1 {
         margin-left: -3px !important;
     }
+
+    .services-section {
+        margin: 5rem 1rem !important;
+    }
+    /* .service-item img {
+        height       : 122px !important;
+        width        : 150px !important;
+        margin-bottom: 0 !important;
+    } */
+
     .header-content p {
         font-size: .7rem !important;
     }
+
     .para {
         font-size: 1rem !important;
     }
@@ -205,9 +235,10 @@
     } */
 
     .header-content-container {
-        height         : 69vw;
-        background-size: 40%;
-        
+        height               : 69vw;
+        background-size      : 55%;
+        background-position-x: 90% !important;
+
     }
 
     .header-content {
@@ -263,45 +294,53 @@
     .content-logo-text {
         margin-top: -1rem;
     }
-    .blog{
-        -webkit-box-orient: vertical !important;
+
+    .blog {
+        -webkit-box-orient   : vertical !important;
         -webkit-box-direction: normal !important;
-            -ms-flex-direction: column !important;
-                flex-direction: column !important;
+        -ms-flex-direction   : column !important;
+        flex-direction       : column !important;
     }
-    .blog .img-contaier{
+
+    .blog .img-contaier {
         height: auto !important;
-        width: 100% !important;
-        margin:0 0 1rem 0;
+        width : 100% !important;
+        margin: 0 0 1rem 0;
     }
-    .iconList{
-        -webkit-box-orient: vertical;
+
+    .iconList {
+        -webkit-box-orient   : vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction   : column;
+        flex-direction       : column;
     }
-  
+
 }
 
 
 /* // Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
-    .header-content h1{
+    .header-content h1 {
         margin-left: -4px !important;
+    }
+
+    .services-section {
+        margin: 5rem 1.5rem !important;
     }
     .header-content p {
         font-size: .9rem !important;
     }
+
     .navbar-brand img {
         width      : 160px;
         margin-left: 0;
     }
 
     .header-content-container {
-        background-position: 75% 10% !important;
-        height             : 50vw !important;
-        background-size    : 25%;
+        background-position: 90% 15% !important;
+        height             : 55vw !important;
+        background-size    : 45%;
     }
 
     .service-item {
@@ -336,21 +375,27 @@
     .newsletter>div:first-child {
         width: 72% !important;
     }
-    .blog-container{
-        max-width: 92% !important ;
+
+    .blog-container {
+        max-width: 92% !important;
     }
-    
+
 }
 
 
 /* // Large devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
-    .header-content h1{
+    .header-content h1 {
         margin-left: -4.8px !important;
     }
+
     .header-content p {
         font-size: 1rem !important;
+    }
+
+    .services-section {
+        margin: 5rem !important;
     }
     .service-item {
         max-width: 200px !important;
@@ -381,22 +426,25 @@
     .newsletter-form {
         float: right;
     }
-    .blog-container{
-        max-width: 85% !important ;
+
+    .blog-container {
+        max-width: 85% !important;
     }
-   
+
 }
 
 
 /* // Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
-    .header-content h1{
+    .header-content h1 {
         margin-left: -7px !important;
     }
+
     .header-content p {
         font-size: 1.3rem !important;
     }
+
     .service-item {
         max-width: 230px !important;
     }
@@ -410,8 +458,9 @@
     }
 
     .newsletter-form .btn {}
-    .blog-container{
-        max-width: 85% !important ;
+
+    .blog-container {
+        max-width: 85% !important;
     }
 }
 
@@ -432,7 +481,8 @@
         font-size  : 3.2vw !important;
         line-height: 0.5;
     }
-    .blog-container{
+
+    .blog-container {
         max-width: 95rem !important;
     }
 }
