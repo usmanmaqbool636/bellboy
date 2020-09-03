@@ -9,7 +9,6 @@
         margin: 5rem 1rem !important;
     }
 
-
     /* .service-item img {
         height       : 122px !important;
         width        : 150px !important;
@@ -18,6 +17,16 @@
 
     .para {
         font-size: .66rem !important;
+    }
+
+   
+
+    .newsletter-form input {
+        width: 100%;
+    }
+
+    .newsletter-form .btn-lg {
+        right: 0%;
     }
 
     .stayhome-content h2 {
@@ -49,7 +58,7 @@
 
     .header-content-container {
         height         : 60vw;
-        background-size: 50%;
+        background-size: 40%;
     }
 
     .header-content {
@@ -58,6 +67,10 @@
 
     .services-row {
         padding: 3vw;
+    }
+
+    #services {
+        margin: .7rem;
     }
 
     .service-item {
@@ -206,6 +219,7 @@
     .services-section {
         margin: 5rem 1rem !important;
     }
+
     /* .service-item img {
         height       : 122px !important;
         width        : 150px !important;
@@ -219,6 +233,17 @@
     .para {
         font-size: 1rem !important;
     }
+
+    .newsletter-form input {
+        width: 100%;
+    }
+
+    .newsletter-form .btn-lg {
+        right: -3%;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
 
     .stayhome-content p {
         font-size: 1.8vw !important;
@@ -243,6 +268,10 @@
 
     .header-content {
         margin: auto 0;
+    }
+
+    #services {
+        margin: 1.3rem;
     }
 
     .service-item {
@@ -328,6 +357,7 @@
     .services-section {
         margin: 5rem 1.5rem !important;
     }
+
     .header-content p {
         font-size: .9rem !important;
     }
@@ -338,9 +368,13 @@
     }
 
     .header-content-container {
-        background-position: 90% 15% !important;
+        background-position: 90% 35% !important;
         height             : 55vw !important;
-        background-size    : 45%;
+        background-size    : 40%;
+    }
+
+    #services {
+        margin: 2rem;
     }
 
     .service-item {
@@ -375,6 +409,13 @@
     .newsletter>div:first-child {
         width: 72% !important;
     }
+    .newsletter-form input{
+        padding: 1.8rem;
+    }
+    .newsletter-form .lg {
+        font-size: 1.8rem !important;
+        /* padding: 1rem; */
+    }
 
     .blog-container {
         max-width: 92% !important;
@@ -397,6 +438,11 @@
     .services-section {
         margin: 5rem !important;
     }
+
+    #services {
+        margin: 3rem;
+    }
+
     .service-item {
         max-width: 200px !important;
     }
@@ -413,8 +459,14 @@
         width: 85% !important;
     }
 
-    .newsletter-form .btn {
-        right: -1rem !important;
+    .newsletter-form input {
+        width: 40rem !important;
+    }
+    .newsletter-form input{
+        padding: 2rem;
+    }
+    .newsletter-form .lg {
+        font-size: 2rem !important;
     }
 
     .apps>div {
@@ -424,9 +476,12 @@
     }
 
     .newsletter-form {
-        float: right;
+        /* float: right; */
     }
-
+    .newsletter-form .btn-lg{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
     .blog-container {
         max-width: 85% !important;
     }
@@ -465,6 +520,12 @@
 }
 
 @media (min-width: 1400px) {
+    .slick-prev{
+        left: -1% !important;
+    }
+    .slick-next{
+        right: -1% !important;
+    }
     .service-item {
         max-width: 270px !important;
     }
@@ -474,15 +535,20 @@
     }
 
     .contact-number h5 {
-        font-size: 1.9vw !important;
+        font-size: 37px !important;
     }
 
     .contact-number h2 {
-        font-size  : 3.2vw !important;
+        font-size  : 62px !important;
         line-height: 0.5;
     }
 
     .blog-container {
         max-width: 95rem !important;
+    }
+    .newsletter-form .btn-lg {
+        right: 0%;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
     }
 }
