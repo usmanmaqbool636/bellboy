@@ -19,7 +19,7 @@
         font-size: .66rem !important;
     }
 
-   
+
 
     .newsletter-form input {
         width: 100%;
@@ -95,6 +95,15 @@
         text-align: center;
     }
 
+    .app-section .text-content ol li::before {
+        transform: scale(.7) translate(-159%, -20%) !important;
+    }
+
+    /* .app-section .text-content ol li::after {
+        left: -16.5% !important;
+        top : 13% !important;
+    } */
+
     .app-section .text-content p,
     .app-section .text-content ol {
         font-size: 2.3vw !important;
@@ -125,7 +134,7 @@
     }
 
     .contact-number h2 {
-        font-size  : 4vw !important;
+        font-size  : 15px !important;
         line-height: 0.5;
     }
 
@@ -239,9 +248,9 @@
     }
 
     .newsletter-form .btn-lg {
-        right: -3%;
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        right        : -3%;
+        padding-left : 1.2rem;
+        padding-right: 1.2rem;
     }
 
 
@@ -316,7 +325,7 @@
     }
 
     .contact-number h2 {
-        font-size  : 3.5vw !important;
+        font-size  : 20px !important;
         line-height: 0.5;
     }
 
@@ -406,15 +415,34 @@
         height: 67% !important;
     }
 
+    .contact-number>div {
+        width: 40% !important;
+    }
+
+    .contact-number h5 {
+        font-size: 20px !important;
+    }
+
+    .contact-number h2 {
+        font-size  : 28px !important;
+        line-height: 0.5;
+    }
+
+
     .newsletter>div:first-child {
         width: 72% !important;
     }
-    .newsletter-form input{
+
+    .newsletter-form input {
         padding: 1.8rem;
     }
+
     .newsletter-form .lg {
         font-size: 1.8rem !important;
-        /* padding: 1rem; */
+
+        padding-left : 1.4rem;
+        padding-right: 1.4rem;
+        /* padding   : 1rem; */
     }
 
     .blog-container {
@@ -451,6 +479,20 @@
         height: 87% !important;
     }
 
+    .contact-number>div {
+        width: 40% !important;
+    }
+
+    .contact-number h5 {
+        font-size: 25px !important;
+    }
+
+    .contact-number h2 {
+        font-size  : 42px !important;
+        line-height: 0.5;
+    }
+
+
     .content-logo-text {
         margin-top: 2rem;
     }
@@ -462,9 +504,11 @@
     .newsletter-form input {
         width: 40rem !important;
     }
-    .newsletter-form input{
+
+    .newsletter-form input {
         padding: 2rem;
     }
+
     .newsletter-form .lg {
         font-size: 2rem !important;
     }
@@ -478,10 +522,14 @@
     .newsletter-form {
         /* float: right; */
     }
-    .newsletter-form .btn-lg{
-        padding-left: 2rem;
-        padding-right: 2rem;
+
+    .newsletter-form .btn-lg {
+
+        right           : -11%;
+        /* padding-left : 2rem;
+        padding-right   : 2rem; */
     }
+
     .blog-container {
         max-width: 85% !important;
     }
@@ -504,9 +552,27 @@
         max-width: 230px !important;
     }
 
+    .app-section .text-content h1 {
+        font-size: 40px !important;
+    }
+
     .contact-number {
         height: 101% !important;
     }
+
+    .contact-number>div {
+        width: 40% !important;
+    }
+
+    .contact-number h5 {
+        font-size: 25px !important;
+    }
+
+    .contact-number h2 {
+        font-size  : 42px !important;
+        line-height: 0.5;
+    }
+
 
     .content-logo-text {
         margin-top: 3rem;
@@ -520,12 +586,14 @@
 }
 
 @media (min-width: 1400px) {
-    .slick-prev{
+    .slick-prev {
         left: -1% !important;
     }
-    .slick-next{
+
+    .slick-next {
         right: -1% !important;
     }
+
     .service-item {
         max-width: 270px !important;
     }
@@ -534,21 +602,26 @@
         height: 100% !important;
     }
 
+    .contact-number>div {
+        width: 40% !important;
+    }
+
     .contact-number h5 {
-        font-size: 37px !important;
+        font-size: 25px !important;
     }
 
     .contact-number h2 {
-        font-size  : 62px !important;
+        font-size  : 42px !important;
         line-height: 0.5;
     }
 
     .blog-container {
         max-width: 95rem !important;
     }
+
     .newsletter-form .btn-lg {
-        right: 0%;
-        padding-left: 2.5rem;
+        right        : 0%;
+        padding-left : 2.5rem;
         padding-right: 2.5rem;
     }
 }
