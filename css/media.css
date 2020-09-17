@@ -126,11 +126,15 @@
     }
 
     .contact-number {
-        height: 50% !important;
+        height: 66px !important;
+    }
+
+    .contact-number>div {
+        margin-top: 4% !important;
     }
 
     .contact-number h5 {
-        font-size: 2.2vw !important;
+        font-size: 2.4vw !important;
     }
 
     .contact-number h2 {
@@ -192,11 +196,11 @@
     }
 
     .contact-number {
-        height: 53px !important;
+        height: 59px !important;
     }
 
     .contact-number>div {
-        margin-top: 4% !important;
+        margin-top: 2% !important;
     }
 
     .content-logo-text {
@@ -317,7 +321,8 @@
     }
 
     .contact-number>div {
-        width: 41%;
+        width     : 41% !important;
+        margin-top: 1px;
     }
 
     .contact-number {
@@ -325,7 +330,7 @@
     }
 
     .contact-number h5 {
-        font-size: 2.2vw !important;
+        font-size: 2vw !important;
     }
 
     .contact-number h2 {
@@ -420,7 +425,8 @@
     }
 
     .contact-number>div {
-        width: 43% !important;
+        width       : 37% !important;
+        margin-right: 30px;
     }
 
     .contact-number h5 {
@@ -609,7 +615,8 @@
 
     .contact-number>div {
         /* width: 40% !important; */
-        width: 44% !important;
+        width       : 38% !important;
+        margin-right: 40px;
     }
 
     .contact-number h5 {
