@@ -56,10 +56,10 @@
                         <a class="nav-link" href="./index.html#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-active" href="./blog.html">Blog</a>
+                        <a class="nav-link " href="./blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./job.html">Blog</a>
+                        <a class="nav-link nav-active" href="./job.html">Blog</a>
                     </li>
 
                     <li class="nav-item ml-3 ">
@@ -226,7 +226,10 @@
 
             <div class="row">
                 <div class="col-xl-8 pt-5 order-1 order-lg-0">
-                    <div id="blog-id">
+                    <div id="job-id">
+
+                    </div>
+                    <div id="applyBtn">
 
                     </div>
                 </div>
@@ -343,80 +346,65 @@
     <!-- Optional JavaScript -->
     <script>
         var urlParams = new URLSearchParams(location.search);
-        const blogId = urlParams.get('id');
+        const postId = urlParams.get('id');
         const CategoriesList = document.getElementById("categories");
 
         const root = "https://bellboyadmin.herokuapp.com"
         // const root = "http://localhost:5000";
-        const isRTL = (s) => {
-            var ltrChars = 'A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02B8\u0300-\u0590\u0800-\u1FFF' + '\u2C00-\uFB1C\uFDFE-\uFE6F\uFEFD-\uFFFF',
-                rtlChars = '\u0591-\u07FF\uFB1D-\uFDFD\uFE70-\uFEFC',
-                rtlDirCheck = new RegExp('^[^' + ltrChars + ']*[' + rtlChars + ']');
-
-            return rtlDirCheck.test(s);
-        };
-
-
-        const renderCategories = (blog) => {
-
-            blog.category.forEach(cat => {
-                document.getElementById(blog._id).innerHTML += `<li class="category-item d-inline-block mx-1">${cat.name}</li>`
+        const renderCategories = (job) => {
+            job.category.forEach(cat => {
+                document.getElementById(job._id).innerHTML += `<li class="category-item d-inline-block mx-1">${cat.name}</li>`
             })
-
         }
 
         var renderBlog = async () => {
             try {
-                document.getElementById("blog-id").innerHTML = `
+                document.getElementById("job-id").innerHTML = `
                             <div class="d-flex justify-content-center">
                                 <div class="spinner-border" style="width: 5rem; height: 5rem;" role="status">
                                     <span class="sr-only">Loading...</span>
                                 </div>
                             </div>
                 `
-                const blog = await axios.get(`${root}/api/blogs/${blogId}`);
-                const blogdata = blog.data;
-                if (blogdata.title) {
-                    const date = moment(blogdata.createdAt).format("DD-MMM-YY");
-                    const directionTitle = isRTL(blogdata.title) ? "rtl" : "";
-                    const directionBody = isRTL(blogdata.body.split(" ")[2] || "") ? "rtl" : "";
+                const job = await axios.get(`${root}/api/posts/${postId}`);
+                const jobdata = job.data;
+                if (jobdata.title) {
+                    const date = moment(jobdata.createdAt).format("DD-MMM-YY");
 
-                    document.getElementById("blog-id").innerHTML = `
+                    document.getElementById("job-id").innerHTML = `
             <div>
                 <div class="d-flex justify-content-center mb-5">
-                    <img class="img-fluid" src="${root}/api/blogs/photo/${blogdata._id}" />
                     </div>
                     <div>
-                        <h1 class="heading mb-3 ${directionTitle}">${blogdata.title} </h1>
-                        <h2 class="date ${directionBody}">${date}</h2>
-                        <p class="tag my-3 ${directionBody}">TAGs</p>
-                        <ul id=${blogdata._id} class="list-unstyled ${directionBody}">
+                        <h1 class="heading mb-3">${jobdata.title} </h1>
+                        <h2 class="date">${date}</h2>
+                        <ul id=${jobdata._id} class="list-unstyled">
                         
                         </ul>
                     </div>
-                    <div class="my-5 ${directionBody}">
+                    <div class="my-5">
                         <p>
-                            ${blogdata.body}
+                            ${jobdata.body}
                         </p>
                     </div>
                 </div>
             `
-                    renderCategories(blogdata);
+                    document.getElementById("applyBtn").innerHTML += `
+                        <a href=${jobdata.jobLink} class="btn lg btn1">Apply Now</a>
+                    `
+                    renderCategories(jobdata);
                 }
                 else {
-                    noBlog()
+                    noPost()
                 }
             } catch (error) {
-                noBlog()
+                // noPost()
             }
-
-
-
         }
-        const noBlog = () => {
-            document.getElementById("blog-id").innerHTML = `
+        const noPost = () => {
+            document.getElementById("job-id").innerHTML = `
                             <div class="d-flex justify-content-center">
-                               <h3>blog not found</h3>
+                               <h3>Job not found</h3>
                             </div>
                 `
         }
@@ -433,8 +421,6 @@
         }
 
         fetchCategories()
-
-
         renderBlog();
 
     </script>

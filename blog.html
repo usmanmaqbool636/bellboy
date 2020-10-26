@@ -55,6 +55,9 @@
                     <li class="nav-item">
                         <a class="nav-link nav-active" href="./blog.html">Blog</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./job.html">Blog</a>
+                    </li>
 
                     <li class="nav-item ml-3 ">
                         <a class="nav-link btn text-white nav-button" data-toggle="modal"
@@ -340,6 +343,14 @@
 
         const blogList = document.getElementById("blogList");
         const CategoriesList = document.getElementById("categories");
+        const isRTL = (s) => {
+            var ltrChars = 'A-Za-z\u00C0-\u00D6\u00D8-\u00F6\u00F8-\u02B8\u0300-\u0590\u0800-\u1FFF' + '\u2C00-\uFB1C\uFDFE-\uFE6F\uFEFD-\uFFFF',
+                rtlChars = '\u0591-\u07FF\uFB1D-\uFDFD\uFE70-\uFEFC',
+                rtlDirCheck = new RegExp('^[^' + ltrChars + ']*[' + rtlChars + ']');
+
+            return rtlDirCheck.test(s);
+        };
+
         const fetchBlogs = async () => {
             try {
                 blogList.innerHTML = ` <div class="d-flex justify-content-center">
@@ -354,46 +365,29 @@
                 else {
                     blogList.innerHTML = ``
                     blogs.data.forEach(blog => {
-
-                        //     blogList.innerHTML += `
-                        // <div class="blog my-3">
-                        //         <div class="img-contaier">
-                        //             <img src="${root}/api/blogs/photo/${blog._id}" class="img-fluid" alt="blog image" />
-                        //         </div>
-                        //         <div>
-                        //             <h3>${blog.title}</h3>
-
-                        //             <div class="mb-2 iconList">
-
-                        //                 <div>
-                        //                     <i class="fa fa-calendar text-yellow" aria-hidden="true"></i> &nbsp;
-                        //                     ${moment(blog.createdAt).format("MMM Do[,] YYYY")}
-                        //                 </div>
-                        //             </div>
-                        //             <p class="mb-1 text-justify">
-                        //             ${blog.body.substr(0,150)}
-                        //             </p>
-                        //             <p style="cursor: pointer;" class="mb-1 font-weight-bold">read more <i class="fa fa-arrow-circle-right text-yellow mr-2" aria-hidden="true"></i> </i></p>
-                        //         </div>
-                        //     </div>`
+                        // const left = isRTL(blog.title);
+                        const directionTitle = isRTL(blog.title) ? "rtl" : "";
+                        const directionBody = isRTL(blog.body.split(" ")[2] || "") ? "rtl" : "";
                         blogList.innerHTML += `
                     <div class="row my-5">
                         <div class="col-md-4">
-                            <img src="${root}/api/blogs/photo/${blog._id}" class="img-fluid1" alt="blog image" />
+                            <img src="${root}/api/blogs/photo/${blog._id}" class="img-fluid1" alt="${blog.title}" />
                         </div>
                         <div class="col-md-8" >
-                            <h3>${blog.title}</h3>
+                            <h3 class=${directionTitle}>${blog.title}</h3>
 
-                            <div class="mb-2 iconList">
+                            <div class="mb-2 iconList ">
 
                                 <div>
                                     <i class="fa fa-calendar text-yellow" aria-hidden="true"></i> &nbsp;
                                     ${moment(blog.createdAt).format("MMM Do[,] YYYY")}
                                 </div>
                             </div>
+                            <div class=${directionBody}>
                             <p class="mb-1 text-justify">
                             ${blog.body.substr(0, 150)}
                             </p>
+                            </div>
                             <p style="cursor: pointer;" class="mb-1 font-weight-bold position-relative">read more <i class="fa fa-arrow-circle-right text-yellow mr-2" aria-hidden="true"></i> </i>
                             <a class="stretched-link" href="/blogview.html?id=${blog._id}" ></a>
                              </p>

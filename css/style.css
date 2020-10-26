@@ -729,4 +729,27 @@ footer hr {
     padding         : 5px;
 }
 
+
 /* Footer End */
+
+
+.rtl {
+    /* direction: rtl; */
+    text-align: right;
+}
+
+.btn1 {
+    background-color: black;
+    color           : white;
+}
+
+.btn1:hover {
+
+    -webkit-box-shadow: -1px 1px 12px 0px rgba(196, 188, 196, 1);
+    -moz-box-shadow   : -1px 1px 12px 0px rgba(196, 188, 196, 1);
+    box-shadow        : -1px 1px 12px 0px rgba(196, 188, 196, 1);
+    transform         : scale(1.02);
+    transition        : all linear 500ms;
+    background-color  : black;
+    color             : white;
+}
