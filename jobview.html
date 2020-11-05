@@ -232,6 +232,19 @@
                     <div id="applyBtn">
 
                     </div>
+                    <!-- AddToAny BEGIN -->
+                    <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                        <a class="a2a_button_facebook"></a>
+                        <a class="a2a_button_twitter"></a>
+                        <a class="a2a_button_email"></a>
+                        <a class="a2a_button_whatsapp"></a>
+                        <a class="a2a_button_facebook_messenger"></a>
+                        <a class="a2a_button_sms"></a>
+                        <a class="a2a_button_linkedin"></a>
+                    </div>
+                    <script async src="https://static.addtoany.com/menu/page.js"></script>
+                    <!-- AddToAny END -->
                 </div>
                 <div class="col-xl-4 mt-5 pt-5 order-lg-1 order-0">
 
@@ -243,11 +256,11 @@
                         </div>
                         <!-- <input type="text" placeholder="Search here" /> -->
                     </div>
-                    <div class="blog-aside categories">
+                    <!-- <div class="blog-aside categories">
                         <h3>Categories</h3>
                         <ul id="categories">
                         </ul>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -369,6 +382,7 @@
                 const job = await axios.get(`${root}/api/posts/${postId}`);
                 const jobdata = job.data;
                 if (jobdata.title) {
+                    document.title = "bellboy - " + jobdata.title;
                     const date = moment(jobdata.createdAt).format("DD-MMM-YY");
 
                     document.getElementById("job-id").innerHTML = `
@@ -392,7 +406,7 @@
                     document.getElementById("applyBtn").innerHTML += `
                         <a href=${jobdata.jobLink} class="btn lg btn1">Apply Now</a>
                     `
-                    renderCategories(jobdata);
+                    // renderCategories(jobdata);
                 }
                 else {
                     noPost()
@@ -409,18 +423,18 @@
                 `
         }
 
-        const fetchCategories = async () => {
-            try {
-                const categories = await axios.get(`${root}/api/categories`);
-                categories.data.forEach(cat => {
-                    CategoriesList.innerHTML += `<li>${cat.name}</li>`
-                })
-            } catch (error) {
-                console.log(error);
-            }
-        }
+        // const fetchCategories = async () => {
+        //     try {
+        //         const categories = await axios.get(`${root}/api/categories`);
+        //         categories.data.forEach(cat => {
+        //             CategoriesList.innerHTML += `<li>${cat.name}</li>`
+        //         })
+        //     } catch (error) {
+        //         console.log(error);
+        //     }
+        // }
 
-        fetchCategories()
+        // fetchCategories()
         renderBlog();
 
     </script>

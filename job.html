@@ -238,11 +238,11 @@
                         </div>
                         <!-- <input type="text" placeholder="Search here" /> -->
                     </div>
-                    <div class="blog-aside categories">
+                    <!-- <div class="blog-aside categories">
                         <h3>Categories</h3>
                         <ul id="categories">
                         </ul>
-                    </div>
+                    </div> -->
 
                 </div>
             </div>
@@ -395,16 +395,17 @@
                 console.log(error);
             }
         }
-        const fetchCategories = async () => {
-            try {
-                const categories = await axios.get(`${root}/api/categories`);
-                categories.data.forEach(cat => {
-                    CategoriesList.innerHTML += `<li>${cat.name}</li>`
-                })
-            } catch (error) {
-                console.log(error);
-            }
-        }
+        // blog categories
+        // const fetchCategories = async () => {
+        //     try {
+        //         const categories = await axios.get(`${root}/api/categories`);
+        //         categories.data.forEach(cat => {
+        //             CategoriesList.innerHTML += `<li>${cat.name}</li>`
+        //         })
+        //     } catch (error) {
+        //         console.log(error);
+        //     }
+        // }
 
         fetchBlogs();
         fetchCategories()
