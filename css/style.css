@@ -26,7 +26,8 @@ body {
 .img-fluid1 {
     width     : 100%;
     height    : 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
 
 .nav-active {
@@ -207,7 +208,7 @@ header {
     font-family: "Montserrat";
     color      : rgb(120, 119, 119);
     line-height: 1.429;
-    font-size  : 21px !important;
+    font-size  : 18px !important;
 }
 
 .slick-slide img {
@@ -298,7 +299,7 @@ header {
 
 .stayhome {
     background-color   : #282932;
-    /* background-color: #f7b615; */
+    background-color: #f7b615;
 }
 
 .stayhome .col-md-7,
@@ -360,7 +361,9 @@ header {
 .stayhome .img-group h5 {
     color: #ffffff;
 }
-
+.fa-2x{
+    font-size: 1.5rem !important;
+}
 
 /* StayHome End */
 
@@ -430,7 +433,9 @@ header {
     /* content  : url("../img/li.png"); */
     content  : "";
     position : absolute;
-    transform: scale(.95) translate(-157%, 0%);
+    -webkit-transform: scale(.95) translate(-157%, 0%);
+        -ms-transform: scale(.95) translate(-157%, 0%);
+            transform: scale(.95) translate(-157%, 0%);
 }
 
 .app-section .text-content ol li:nth-child(1)::before {
@@ -492,10 +497,10 @@ header {
     left          : 3%;
     letter-spacing: .5vw;
 }
-
-
 /* App section End */
-
+.container-custom{
+    width: 80% !important;
+}
 
 /* news letter  start */
 
@@ -551,7 +556,7 @@ footer {
 }
 
 .contact-number-bg {
-    background-image : url("../img/footer/Contact\ Banner-01.jpg");
+    background-image : url("../img/footer/Banner-01.svg");
     background-repeat: no-repeat;
     background-size  : contain;
     height           : 177px;
@@ -583,28 +588,53 @@ footer {
     font-weight: 700;
 }
 
-.footer-icons {
-    margin-top: 2rem;
+.social-buttons{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 50%;
+    z-index: 1050;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    right: 0px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
-
-.footer-icons a:hover,
-.footer-icons a {
+.social-buttons i{
+    color: #f7b615;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    padding: 10px 0px;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.social-buttons a:hover,
+.social-buttons a {
+    width: 40px;
+    background-color: rgba(0,0,0,0.3);
+    height: auto;
+    margin: 2px 0px;
+    display: inline-block;
+    text-align: center;
     text-decoration: none;
 }
 
-.footer-icons i {
+.social-buttons i {
     color             : #f7b615;
-    margin            : 0 1.5rem;
     -webkit-transition: all .4s ease;
     -o-transition     : all .4s ease;
     transition        : all .4s ease;
 }
 
-.footer-icons i:hover {
+.social-buttons i:hover {
     color            : #76bb43;
-    -webkit-transform: translateY(-10px);
-    -ms-transform    : translateY(-10px);
-    transform        : translateY(-10px);
+    -webkit-transform: scale(1.2);
+    -ms-transform    : scale(1.2);
+    transform        : scale(1.2);
 }
 
 .content-logo-text p {
@@ -747,9 +777,12 @@ footer hr {
 .btn1:hover {
 
     -webkit-box-shadow: -1px 1px 12px 0px rgba(196, 188, 196, 1);
-    -moz-box-shadow   : -1px 1px 12px 0px rgba(196, 188, 196, 1);
     box-shadow        : -1px 1px 12px 0px rgba(196, 188, 196, 1);
-    transform         : scale(1.02);
+    -webkit-transform         : scale(1.02);
+        -ms-transform         : scale(1.02);
+            transform         : scale(1.02);
+    -webkit-transition        : all linear 500ms;
+    -o-transition        : all linear 500ms;
     transition        : all linear 500ms;
     background-color  : black;
     color             : white;

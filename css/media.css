@@ -1,10 +1,25 @@
 /* // Small devices (landscape phones, 576px and up) */
-
+@media(max-width:360px){
+    .mySlides .img-fluid{
+        height: 100px !important;
+    }
+    /* .stayhome{
+        height: 80px;
+    } */
+}
 @media (max-width: 575.98px) {
     .header-content h1 {
         margin-left: -2.5px !important;
     }
-
+    .mySlides .img-fluid{
+        height: 180px !important;
+    }
+    /* .stayhome{
+        height: 100px;
+    } */
+    .about-video{
+        height: 200px !important;
+    }
     .services-section {
         margin: 5rem 1rem !important;
     }
@@ -17,6 +32,7 @@
 
     .para {
         font-size: .66rem !important;
+        margin-right: 20px;
     }
 
 
@@ -28,7 +44,6 @@
     .newsletter-form .btn-lg {
         right: 0%;
     }
-
     .stayhome-content h2 {
         font-size: 5vw !important;
     }
@@ -96,7 +111,9 @@
     }
 
     .app-section .text-content ol li::before {
-        transform: scale(.7) translate(-159%, -20%) !important;
+        -webkit-transform: scale(.7) translate(-159%, -20%) !important;
+            -ms-transform: scale(.7) translate(-159%, -20%) !important;
+                transform: scale(.7) translate(-159%, -20%) !important;
     }
 
     /* .app-section .text-content ol li::after {
@@ -142,10 +159,6 @@
         line-height: 0.25;
     }
 
-    .content-logo-text {
-        margin-top: -3rem;
-    }
-
     .footer-icons i {
         font-size: 1.5em !important;
     }
@@ -173,7 +186,8 @@
     .img-fluid1 {
         width     : initial !important;
         height    : initial !important;
-        object-fit: initial !important;
+        -o-object-fit: initial !important;
+           object-fit: initial !important;
     }
 }
 
@@ -181,7 +195,12 @@
     .header-content h1 {
         margin-left: -2px !important;
     }
-
+    .mySlides .img-fluid{
+        height: 180px !important;
+    }
+    .about-video{
+        height: 200px !important;
+    }
     .navbar-brand img {
         width      : 18vw !important;
         margin-left: -7vw !important;
@@ -238,7 +257,12 @@
     .header-content h1 {
         margin-left: -3px !important;
     }
-
+    .mySlides .img-fluid{
+        height: 350px !important;
+    }
+    .about-video{
+        height: 300px !important;
+    }
     .services-section {
         margin: 5rem 1rem !important;
     }
@@ -343,11 +367,6 @@
         font-size  : 20px !important;
         line-height: 0.5;
     }
-
-    .content-logo-text {
-        margin-top: -1rem;
-    }
-
     .blog {
         -webkit-box-orient   : vertical !important;
         -webkit-box-direction: normal !important;
@@ -371,7 +390,8 @@
     .img-fluid1 {
         width     : initial !important;
         height    : initial !important;
-        object-fit: initial !important;
+        -o-object-fit: initial !important;
+           object-fit: initial !important;
     }
 
 }
@@ -383,9 +403,14 @@
     .header-content h1 {
         margin-left: -4px !important;
     }
-
+    .mySlides .img-fluid{
+        height: 480px !important;
+    }
+    .about-video{
+        height: 360px !important;
+    }
     .services-section {
-        margin: 5rem 1.5rem !important;
+        margin: 5rem 1.5rem !important; 
     }
 
     .header-content p {
@@ -474,7 +499,8 @@
     .img-fluid1 {
         width     : 100% !important;
         height    : 100% !important;
-        object-fit: cover !important;
+        -o-object-fit: cover !important;
+           object-fit: cover !important;
     }
 }
 
@@ -485,11 +511,15 @@
     .header-content h1 {
         margin-left: -4.8px !important;
     }
-
+    .mySlides .img-fluid{
+        height: 510px !important;
+    }
     .header-content p {
         font-size: 1rem !important;
     }
-
+    .about-video{
+        width: 80%;
+    }
     .services-section {
         margin: 5rem !important;
     }
@@ -551,7 +581,6 @@
     }
 
     .newsletter-form .btn-lg {
-
         right           : -11%;
         /* padding-left : 2rem;
         padding-right   : 2rem; */
@@ -570,7 +599,9 @@
     .header-content h1 {
         margin-left: -7px !important;
     }
-
+    .mySlides .img-fluid{
+        height: 550px !important;
+    }
     .header-content p {
         font-size: 1.3rem !important;
     }
@@ -617,7 +648,9 @@
     .slick-prev {
         left: -1% !important;
     }
-
+    .mySlides .img-fluid{
+        height: 580px !important;
+    }
     .slick-next {
         right: -1% !important;
     }

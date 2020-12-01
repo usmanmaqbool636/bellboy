@@ -37,7 +37,20 @@
 
 <body data-spy="scroll" data-target=".navbar">
 
-
+    <div class="social-buttons">
+        <a href="https://twitter.com/bellboyco/" target="_blank" rel="noreferrer">
+            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.facebook.com/bellboyco/" target="_blank" rel="noreferrer">
+            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.instagram.com/bellboy_co/" target="_blank" rel="noreferrer">
+            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/bellboyco/" target="_blank" rel="noreferrer">
+            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+        </a>
+    </div>
 
     <header class="container-fluid  p-0">
         <!-- NavBar -->
@@ -75,44 +88,43 @@
         <!-- navBar -->
 
 
-        <div class="container-fluid slideshow-container mb-5">
+        <div class="container-fluid slideshow-container mb-5 p-0">
+            <div class="mySlides ">
+                <div class=" pl-0 pr-0" data-aos="fade-left">
+                    <img src="./img/header/WEB Banner 01.png" width="100%" height="auto" />
+                </div>
+            </div>
+            <div class="mySlides ">
+                <div class=" pl-0 pr-0" data-aos="fade-left">
+                    <img src="./img/header/WEB Banner 02.png" width="100%" height="auto" />
+                </div>
+            </div>
 
-            <div class="mySlides">
-                <div class="row  header-content-container pl-0 pr-0" data-aos="fade-left">
-                    <img src="./img/header/WEB Banner-01.png" class="img-fluid" />
+            <div class="mySlides ">
+                <div class=" pl-0 pr-0" data-aos="fade-left">
+                    <img src="./img/header/WEB Banner 03.png" width="100%" height="auto" />
                 </div>
             </div>
-            <div class="mySlides">
-                <div class="row  header-content-container pl-0 pr-0" data-aos="fade-left">
-                    <img src="./img/header/WEB Banner 02.png" class="img-fluid" />
+            <div class="mySlides ">
+                <div class=" pl-0 pr-0" data-aos="fade-left">
+                    <img src="./img/header/WEB Banner 04.png" width="100%" height="auto" />
                 </div>
             </div>
-
-            <div class="mySlides">
-                <div class="row  header-content-container pl-0 pr-0" data-aos="fade-left">
-                    <img src="./img/header/WEB Banner 03.png" class="img-fluid" />
+            <div class="mySlides ">
+                <div class=" pl-0 pr-0" data-aos="fade-left">
+                    <img src="./img/header/WEB Banner 05.png" width="100%" height="auto" />
+                </div>  
+            </div>
+            <div class="mySlides ">
+                <div class=" pl-0 pr-0" data-aos="fade-left">
+                    <img src="./img/header/WEB Banner 06.png" width="100%" height="auto" />
                 </div>
             </div>
-            <div class="mySlides">
-                <div class="row  header-content-container pl-0 pr-0" data-aos="fade-left">
-                    <img src="./img/header/WEB Banner 04.png" class="img-fluid" />
-                </div>
-            </div>
-            <div class="mySlides">
-                <div class="row  header-content-container pl-0 pr-0" data-aos="fade-left">
-                    <img src="./img/header/WEB Banner 05.png" class="img-fluid" />
-                </div>
-            </div>
-            <div class="mySlides">
-                <div class="row  header-content-container pl-0 pr-0" data-aos="fade-left">
-                    <img src="./img/header/WEB Banner 06.png" class="img-fluid" />
-                </div>
-            </div>
-            <div class="mySlides">
+            <!-- <div class="mySlides">
                 <div class="row  header-content-container pl-0 pr-0" data-aos="fade-left">
                     <img src="./img/header/WEB Banner 07.png" class="img-fluid" />
                 </div>
-            </div>
+            </div> -->
         </div>
         <script>
             var slideIndex = 1;
@@ -146,7 +158,7 @@
             }
             setInterval(() => {
                 showSlides(slideIndex += 1)
-            }, 2000);
+            }, 3000);
         </script>
 
 
@@ -193,7 +205,8 @@
         </div>
     </div>
     <!-- /Modal -->
-
+<!-- modal fade show -->
+<!-- exampleModalCenter -->
     <main class="container-fluid p-0 m-0">
 
         <section class="container blog-container my-5">
@@ -203,13 +216,14 @@
                     <div id="job-id">
 
                     </div>
-                    <div id="applyBtn">
+                    <div id="applyBtn" data-toggle="modal"
+                    data-target="#exampleModalCenter">
 
                     </div>
                     <!-- AddToAny BEGIN -->
                     <div class="row">
                         <div class="mt-5 col-12">
-                            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
                                 <a class="mr-2 mb-2 a2a_button_facebook" title="facebook"></a>
                                 <a class="mr-2 mb-2 a2a_button_twitter" title="twitter"></a>
                                 <a class="mr-2 mb-2 a2a_button_email" title="mail"></a>
@@ -274,48 +288,71 @@
 
     </main>
 
+    <!-- modal start -->
+    <!-- become a bellboy -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Become a BellBoy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
 
+                    <form>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your Name">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="text" class="form-control" placeholder="Enter your Email">
+                        </div>
+                        <div class="form-group">
+                            <label>Contact No</label>
+                            <input type="text" class="form-control" placeholder="Contact no">
+                        </div>
+                        <div class="form-group">
+                            <label>Why you want to join</label>
+                            <textarea placeholder="why you want to join" class="form-control" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn bg-yellow text-white" data-dismiss="modal">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal end -->
 
     <footer>
-        <div class="container">
+        <div class="container container-custom">
             <div class="row justify-content-center py-2">
-                <div data-aos="fade-up" data-aos-easing="ease" data-aos-duration="500" data-aos-offset="0"
-                    class="col-12 contact-number-bg">
-                    <div class="contact-number">
-                        <!-- <div class="">
-                            <h5>Services available only for Bahria Town Lahore</h5>
-                            <h2>+92 304 111 2355</h2>
-                            <h5>info@bellboy.pk</h5>
-                        </div> -->
-                    </div>
+                <div class="col-12 mt-4">
+                    <img src="./img/footer/Banner-01.svg" alt="" width="100%" height="auto">
+                </div>
+                <div class="col-12 text-center mt-4"> 
+                        <iframe class="about-video" width="100%" src="https://www.youtube.com/embed/rD3HIgjkTtA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div id="about" class="col-10 text-center content-logo-text offset">
                     <img src="./img/header/logo.svg" class="mb-4" width="160" alt="">
                     <p class="text-white para">
-                        Bellboy has been created to develop opportunities for job seekers affected by corona or other
-                        reasons, taking care of delivery or any specific task for household or any other customer
-                        requirements. Our platform provides personal assistance and delivery
-                        services for all your needs, while you stay at home with peace of mind our bellboys will take
-                        care of the rest following safety SOPs in these challenging times.
+                        Bellboy has been created to develop opportunities for job seekers, 
+                        taking care of deliveries or any specific outdoor task 
+                        for household or any other customer requirements. Our platform provides
+                         personal assistance and delivery services for all your needs, while you
+                          stay at home with peace of mind our bellboys will take care of the rest
+                           following safety SOPs in these challenging times.
                     </p>
-                    <div class="footer-icons">
-                        <a href="https://twitter.com/bellboyco/" target="_blank" rel="noreferrer">
-                            <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.facebook.com/bellboyco/" target="_blank" rel="noreferrer">
-                            <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.instagram.com/bellboy_co/" target="_blank" rel="noreferrer">
-                            <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/bellboyco/" target="_blank" rel="noreferrer">
-                            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-                        </a>
-                        <!-- <a href="#" target="_blank">
-                            <i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
-                        </a> -->
-
-                    </div>
+                    <p class="text-yellow para">
+                        161-A. F/F Sector C commercial, Bahria Town, Lahore, Pakistan
+                    </p>
                 </div>
             </div>
         </div>
@@ -381,8 +418,14 @@
                 </div>
             `
                     document.getElementById("applyBtn").innerHTML += `
-                        <a href=${jobdata.jobLink} class="btn lg btn1">Apply Now</a>
+                        <a class="btn text-white lg btn1">Apply Now</a>
                     `
+                    // document.getElementById("applyBtn").click(()=>{
+                    // })
+                    document.getElementById("applyBtn").addEventListener("click",()=>{
+                        document.getElementById("exampleModalCenter").addClass("fade show")
+                        
+                    })
                     // renderCategories(jobdata);
                 }
                 else {
