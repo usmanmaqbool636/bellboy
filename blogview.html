@@ -5,12 +5,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
     <!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" /> -->
-
     <link rel="shortcut icon" href="./img/Running.svg" type="image/x-icon">
     <link rel="apple-touch-icon" href="./img/Running.svg">
     <link rel="apple-touch-icon" sizes="114x114" href="./img/Running.svg">
@@ -29,8 +26,6 @@
         integrity="sha512-rmZcZsyhe0/MAjquhTgiUcb4d9knaFc7b5xAfju483gbEXTkeJRUMIPk6s3ySZMYUHEcjKbjLjyddGWMrNEvZg=="
         crossorigin="anonymous"></script>
     <title>bellboy</title>
-    <meta name=”description”
-        content='Filling the gap in daily household and outdoor needs, our mobile application offers a unique service for you to convenirntly hire-a-bellboy as "your personal assistant" for a certain period of time to do multiple or specific outdoor jobs '>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -86,80 +81,6 @@
             </div>
         </nav>
         <!-- navBar -->
-
-
-        <div class="container-fluid slideshow-container mb-5 p-0">
-            <div class="mySlides ">
-                <div class=" pl-0 pr-0" data-aos="fade-left">
-                    <img src="./img/header/WEB Banner 01.png" width="100%" height="auto" />
-                </div>
-            </div>
-            <div class="mySlides ">
-                <div class=" pl-0 pr-0" data-aos="fade-left">
-                    <img src="./img/header/WEB Banner 02.png" width="100%" height="auto" />
-                </div>
-            </div>
-
-            <div class="mySlides ">
-                <div class=" pl-0 pr-0" data-aos="fade-left">
-                    <img src="./img/header/WEB Banner 03.png" width="100%" height="auto" />
-                </div>
-            </div>
-            <div class="mySlides ">
-                <div class=" pl-0 pr-0" data-aos="fade-left">
-                    <img src="./img/header/WEB Banner 04.png" width="100%" height="auto" />
-                </div>
-            </div>
-            <div class="mySlides ">
-                <div class=" pl-0 pr-0" data-aos="fade-left">
-                    <img src="./img/header/WEB Banner 05.png" width="100%" height="auto" />
-                </div>  
-            </div>
-            <div class="mySlides ">
-                <div class=" pl-0 pr-0" data-aos="fade-left">
-                    <img src="./img/header/WEB Banner 06.png" width="100%" height="auto" />
-                </div>
-            </div>
-            <!-- <div class="mySlides">
-                <div class="row  header-content-container pl-0 pr-0" data-aos="fade-left">
-                    <img src="./img/header/WEB Banner 07.png" class="img-fluid" />
-                </div>
-            </div> -->
-        </div>
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {
-                    slideIndex = 1
-                }
-                if (n < 1) {
-                    slideIndex = slides.length
-                }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active1", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-            }
-            setInterval(() => {
-                showSlides(slideIndex += 1)
-            }, 3000);
-        </script>
 
 
     </header>
@@ -283,7 +204,7 @@
 
 
 
-    <footer>
+    <!-- <footer>
         <div class="container container-custom">
             <div class="row justify-content-center py-2">
                 <div class="col-12 mt-4">
@@ -302,8 +223,11 @@
                           stay at home with peace of mind our bellboys will take care of the rest
                            following safety SOPs in these challenging times.
                     </p>
-                    <p class="text-yellow para">
+                    <p class="text-yellow para mb-0">
                         161-A. F/F Sector C commercial, Bahria Town, Lahore, Pakistan
+                    </p>
+                    <p class="text-yellow para">
+                        Tell: +92 423 786 2364
                     </p>
                 </div>
             </div>
@@ -318,7 +242,7 @@
                 <a href="./termandconditions.html" class="text-white">Terms & Condition</a>
             </p>
         </div>
-    </footer>
+    </footer> -->
 
 
 
@@ -362,9 +286,24 @@
                     const date = moment(blogdata.createdAt).format("DD-MMM-YY");
                     const directionTitle = isRTL(blogdata.title) ? "rtl" : "";
                     const directionBody = isRTL(blogdata.body.split(" ")[2] || "") ? "rtl" : "";
-
+                    // <meta property="og:title" content="European Travel Destinations">
+                    // <meta property="og:description" content="Offering tour packages for individuals or groups.">
+                    // <meta property="og:image" content="http://euro-travel-example.com/thumbnail.jpg">
+                    // <meta property="og:url" content="http://euro-travel-example.com/index.htm">
+                    var meta = document.createElement('meta');
+                    meta.property = "og:title"
+                    meta.content = `${blogdata.title}`;
+                    document.getElementsByTagName('head')[0].appendChild(meta);
+                    var meta1 = document.createElement('meta');
+                    meta1.property = "og:description"
+                    meta1.content = `${blogdata.body}`;
+                    document.getElementsByTagName('head')[0].appendChild(meta1);
+                    var meta2 = document.createElement('meta');
+                    meta2.property = "og:image"
+                    meta2.content = `${root}/api/blogs/photo/${blogdata._id}`;
+                    document.getElementsByTagName('head')[0].appendChild(meta2);
                     document.getElementById("blog-id").innerHTML = `
-                <img src="${root}/api/blogs/photo/${blogdata._id}" width="100%" height="auto" />
+                <img src="${root}/api/blogs/photo/${blogdata._id}" width="100%" height="auto"" />
                     <div>
                         <h1 class="heading mb-3 ${directionTitle}">${blogdata.title} </h1>
                         <h2 class="date ${directionBody}">${date}</h2>
